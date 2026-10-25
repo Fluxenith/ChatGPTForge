@@ -1,5 +1,7 @@
 # ChatGPTForge
 
+![ChatGPTForge: conversation-driven code, browser and Windows tools](docs/assets/forge-overview.png)
+
 **Turn a ChatGPT conversation into work on your Windows machine.**
 
 Edit a project, run its checks, automate an approved browser, and inspect the result—with persistent tasks and recoverable code changes.
@@ -33,6 +35,18 @@ node dist/forge-cli.js serve
 ~~~
 
 Create the workspace first. Use an HTTPS origin you control and configure your existing tunnel to the local MCP listener. Complete OAuth in the ChatGPT connection UI. Local startup alone does not connect ChatGPT. See [connection setup](docs/connection.md).
+
+## From request to result
+
+![Inspect the current state, preview edits, act and verify the result](docs/assets/forge-workflow.png)
+
+The diagrams above illustrate the workflow; they are not application screenshots.
+
+### A desktop example
+
+This actual capture shows text received after a drag between two demonstration windows. It demonstrates that workflow, not compatibility with every Windows app or drag format.
+
+![A demonstration Windows app receiving text from a cross-window drag](docs/assets/desktop-drop-example.png)
 
 ## Try a small workflow
 
