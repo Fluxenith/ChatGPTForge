@@ -64,7 +64,6 @@ Checks do not install software. Repair and deployment require explicit apply fla
 ## Learn more
 
 - [Shared project memory](runtime/docs/global-memory.md)
-- [PHP semantic editing](runtime/docs/php-semantic-editing.md)
 - [Windows desktop operations](runtime/docs/desktop-surface.md)
 - [Operating guide](runtime/skills/forge-operation/SKILL.md)
 - [Contributing](CONTRIBUTING.md) and [security](SECURITY.md)
