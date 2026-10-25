@@ -1,0 +1,21 @@
+name: Setup and integration inquiry
+description: Ask about deployment, onboarding or workflow integration
+title: "[Setup inquiry] "
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would you like to achieve?
+      description: Describe the workflow, team size and operating system. This is a public issue; do not include contact details, credentials or private code.
+    validations:
+      required: true
+  - type: dropdown
+    id: interest
+    attributes:
+      label: What kind of help are you looking for?
+      options:
+        - Community guidance
+        - Interested in paid setup or integration support
+  - type: markdown
+    attributes:
+      value: This is an inquiry, not a purchase. Scope, availability and any pricing must be agreed separately.

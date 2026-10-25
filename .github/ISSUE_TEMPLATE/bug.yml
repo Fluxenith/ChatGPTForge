@@ -1,0 +1,14 @@
+name: Bug report
+description: Report a reproducible problem
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include expected behavior and steps. Remove private paths and credentials.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows and Node versions

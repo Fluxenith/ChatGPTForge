@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title data-i18n>ChatGPTForge Chrome 接續</title>
+<style>body{font:16px system-ui;max-width:720px;margin:50px auto;padding:24px;background:#111820;color:#e5edf5}label{display:block;margin:20px 0}input,button{font:inherit;padding:10px}input[type=text],input[type=password]{width:95%}button{cursor:pointer}p{line-height:1.6}#status{white-space:pre-wrap}</style>
+<h1 data-i18n>沿用目前 Chrome 的登入</h1><p data-i18n>此擴充功能只開啟新的 ChatGPT 交接分頁，不讀取 Cookie、密碼或其他分頁。不需要再登入另一個瀏覽器。</p>
+<label data-i18n>本機管理服務<input id="origin" type="text" value="http://127.0.0.1:8768"></label>
+<label data-i18n>配對碼（從 ChatGPTForge 管理頁取得）<input id="token" type="password" autocomplete="off"></label>
+<label data-i18n><input id="enabled" type="checkbox">啟用自動接續（每 30 秒檢查）</label>
+<button id="save" data-i18n>保存設定</button> <button id="run" data-i18n>立即檢查</button><p id="status" role="status" data-i18n></p>
+<script src="language.js"></script><script src="options.js"></script></html>

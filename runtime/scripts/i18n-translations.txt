@@ -1,0 +1,261 @@
+語言|Language|语言|言語|언어
+ChatGPTForge 管理|ChatGPTForge management|ChatGPTForge 管理|ChatGPTForge 管理|ChatGPTForge 관리
+讓 ChatGPT 幫你操作本機專案|Let ChatGPT work on your local projects|让 ChatGPT 帮你操作本机项目|ChatGPT でローカルプロジェクトを操作|ChatGPT로 로컬 프로젝트 작업
+正在連線…|Connecting…|正在连接…|接続中…|연결 중…
+開始使用|Get started|开始使用|使い始める|시작하기
+正在確認本機連線…|Checking local connection…|正在检查本机连接…|ローカル接続を確認中…|로컬 연결 확인 중…
+打開|Open|打开|開く|열기
+。|.|。|。|.
+在輸入框選擇|In the composer, select|在输入框选择|入力欄で選択：|입력창에서 선택:
+，或你要用的專案外掛。|, or the project plugin you want to use.|，或你要用的项目插件。|、または使用するプロジェクトプラグイン。|또는 사용할 프로젝트 플러그인.
+直接說要做什麼，例如：「幫我看看這個專案」。通用外掛請一起提供資料夾路徑。|Describe what you need, for example: “Review this project.” Include the folder path when using the general plugin.|直接说要做什么，例如：“帮我看看这个项目”。通用插件请同时提供文件夹路径。|「このプロジェクトを確認して」など、依頼を入力してください。汎用プラグインにはフォルダーパスも指定してください。|“이 프로젝트를 검토해 줘”처럼 요청하세요. 공용 플러그인에는 폴더 경로도 입력하세요.
+平常在 ChatGPT 操作就好，這個頁面可以關掉。|You can close this page and continue in ChatGPT.|平时在 ChatGPT 操作即可，可以关闭此页面。|このページを閉じて ChatGPT で作業を続けられます。|이 페이지를 닫고 ChatGPT에서 계속 작업할 수 있습니다.
+檢查連線|Check connection|检查连接|接続を確認|연결 확인
+新增專案外掛|Add project plugin|添加项目插件|プロジェクトプラグインを追加|프로젝트 플러그인 추가
+填兩個欄位，Forge 會在 Chrome 填好 ChatGPT 外掛表單。你只要確認建立並連接，資料夾就會自動對應。|Fill in both fields. Forge will prepare the ChatGPT plugin form in Chrome. Confirm creation and connect to link the folder.|填写两个字段，Forge 会在 Chrome 填好 ChatGPT 插件表单。确认创建并连接后会自动关联文件夹。|両方の項目を入力すると、Forge が Chrome の ChatGPT プラグインフォームを準備します。作成と接続を確認するとフォルダーが関連付けられます。|두 항목을 입력하면 Forge가 Chrome에서 ChatGPT 플러그인 양식을 준비합니다. 생성과 연결을 확인하면 폴더가 연결됩니다.
+外掛名稱|Plugin name|插件名称|プラグイン名|플러그인 이름
+例如 ChatGPTForge_我的網站|e.g. ChatGPTForge_MyWebsite|例如 ChatGPTForge_我的网站|例：ChatGPTForge_MyWebsite|예: ChatGPTForge_MyWebsite
+專案資料夾|Project folder|项目文件夹|プロジェクトフォルダー|프로젝트 폴더
+貼上資料夾完整路徑|Paste the full folder path|粘贴文件夹完整路径|フォルダーのフルパスを貼り付け|전체 폴더 경로 붙여넣기
+新增到 ChatGPT|Add to ChatGPT|添加到 ChatGPT|ChatGPT に追加|ChatGPT에 추가
+請到新開啟的 ChatGPT 分頁，按 Create，再按 Connect。連接時確認外掛名稱與資料夾即可。|In the new ChatGPT tab, click Create, then Connect. Check the plugin name and folder when connecting.|请到新打开的 ChatGPT 标签页，点击 Create，再点击 Connect。连接时确认插件名称和文件夹。|新しい ChatGPT タブで Create、次に Connect をクリックし、プラグイン名とフォルダーを確認してください。|새 ChatGPT 탭에서 Create, Connect 순으로 클릭하고 플러그인 이름과 폴더를 확인하세요.
+設定（需要時再打開）|Settings (open when needed)|设置（需要时打开）|設定（必要なときに開く）|설정 (필요할 때 열기)
+所有外掛共用一個入口。只有要更改預設專案或設定瀏覽器、桌面操作時，才需要這裡。|All plugins share one entry point. Use these settings to change the default project or configure browser and desktop access.|所有插件共用一个入口。更改默认项目或配置浏览器、桌面操作时才需要此处。|すべてのプラグインで入口を共有します。既定のプロジェクトやブラウザー、デスクトップ操作を設定できます。|모든 플러그인이 하나의 진입점을 공유합니다. 기본 프로젝트나 브라우저 및 데스크톱 접근을 설정하세요.
+Chrome 擴充功能配對|Pair Chrome extension|配对 Chrome 扩展程序|Chrome 拡張機能のペアリング|Chrome 확장 프로그램 페어링
+複製 Chrome 配對碼|Copy Chrome pairing code|复制 Chrome 配对码|Chrome ペアリングコードをコピー|Chrome 페어링 코드 복사
+外掛名稱 → 資料夾|Plugin name → folder|插件名称 → 文件夹|プラグイン名 → フォルダー|플러그인 이름 → 폴더
+在 ChatGPT Web 選哪個外掛，就使用那一列的資料夾。通用外掛請在對話中指定路徑。|The selected ChatGPT Web plugin uses its linked folder. Specify a path in chat for the general plugin.|在 ChatGPT Web 选择的插件会使用对应的文件夹。通用插件请在对话中指定路径。|ChatGPT Web で選択したプラグインのフォルダーを使用します。汎用プラグインはチャットでパスを指定してください。|ChatGPT Web에서 선택한 플러그인의 연결된 폴더를 사용합니다. 공용 플러그인은 대화에서 경로를 지정하세요.
+重新讀取|Reload|重新读取|再読み込み|새로 고침
+專案與瀏覽器授權|Project and browser access|项目与浏览器授权|プロジェクトとブラウザーの許可|프로젝트 및 브라우저 접근
+新增的專案可由已連線的 ChatGPT 工具讀寫。命令以你的 Windows 權限執行，並非沙箱。|Connected ChatGPT tools can read and write added projects. Commands run with your Windows permissions, outside a sandbox.|已连接的 ChatGPT 工具可读写新增项目。命令以你的 Windows 权限执行，不在沙箱中。|接続済みの ChatGPT ツールは追加したプロジェクトを読み書きできます。コマンドはサンドボックス外で Windows のユーザー権限で実行されます。|연결된 ChatGPT 도구가 추가한 프로젝트를 읽고 쓸 수 있습니다. 명령은 샌드박스 외부에서 사용자의 Windows 권한으로 실행됩니다.
+專案完整路徑|Full project path|项目完整路径|プロジェクトのフルパス|전체 프로젝트 경로
+授權此專案（重啟後生效）|Allow this project (requires restart)|授权此项目（重启后生效）|このプロジェクトを許可（再起動後に有効）|이 프로젝트 허용 (재시작 후 적용)
+驗收網站來源|Test website origin|验收网站来源|検証サイトのオリジン|테스트 웹사이트 출처
+允許瀏覽器操作此網站|Allow browser access to this website|允许浏览器操作此网站|このサイトのブラウザー操作を許可|이 웹사이트의 브라우저 접근 허용
+Windows 桌面操作（預覽）|Windows desktop controls (preview)|Windows 桌面操作（预览）|Windows デスクトップ操作（プレビュー）|Windows 데스크톱 제어 (미리 보기)
+支援可存取性按鈕、文字欄位、核取方塊、選項與捲動容器，以及所選視窗截圖。授權後 ChatGPT 可操作所選視窗 15 分鐘；不支援瀏覽器、終端機或密碼欄位。操作期間，真人鍵鼠輸入會使舊觀察失效；按實體 Escape 可緊急停止，需在此重新授權才會恢復。|Supports accessible buttons, text fields, checkboxes, options, scrolling, and screenshots of the selected window. ChatGPT can control it for 15 minutes after approval. Browsers, terminals, and password fields are unsupported. Your keyboard or mouse input invalidates previous observations. Press Escape to stop; authorize again here to resume.|支持无障碍按钮、文本框、复选框、选项、滚动容器及所选窗口截图。授权后 ChatGPT 可操作所选窗口 15 分钟；不支持浏览器、终端或密码字段。真人键鼠输入会使旧观察失效；按实体 Escape 可紧急停止，需在此重新授权才能恢复。|アクセシビリティ対応のボタン、入力欄、チェックボックス、選択肢、スクロール、選択ウィンドウの撮影に対応します。許可後15分間操作できます。ブラウザー、端末、パスワード欄は非対応です。キーボードやマウスの手動入力で以前の観測は無効になります。Escape で緊急停止し、ここで再許可すると再開できます。|접근성 버튼, 텍스트 필드, 체크박스, 옵션, 스크롤 및 선택한 창 캡처를 지원합니다. 허용 후 15분 동안 ChatGPT가 조작할 수 있습니다. 브라우저, 터미널, 비밀번호 필드는 지원하지 않습니다. 사용자의 키보드나 마우스 입력은 이전 관찰을 무효화합니다. Escape로 긴급 정지하고 여기서 다시 허용하여 재개하세요.
+讀取可用視窗|List available windows|读取可用窗口|利用可能なウィンドウを表示|사용 가능한 창 표시
+授權視窗|Window to authorize|授权窗口|許可するウィンドウ|허용할 창
+授權所選視窗 15 分鐘|Allow selected window for 15 minutes|授权所选窗口 15 分钟|選択ウィンドウを15分間許可|선택한 창을 15분 동안 허용
+撤回所有桌面授權|Revoke all desktop access|撤回所有桌面授权|すべてのデスクトップ許可を取り消す|모든 데스크톱 접근 취소
+整個桌面截圖會包含所有螢幕與其他可見應用程式內容。這項授權僅允許截圖，不允許全桌面輸入。|Desktop screenshots include all displays and other visible applications. This permission allows screenshots only, with no full-desktop input.|整个桌面截图会包含所有屏幕及其他可见应用内容。此授权仅允许截图，不允许全桌面输入。|デスクトップ撮影には全画面と表示中の他のアプリが含まれます。この許可は撮影のみで、デスクトップ全体への入力は許可しません。|데스크톱 캡처에는 모든 화면과 표시된 다른 앱이 포함됩니다. 이 권한은 캡처만 허용하며 전체 데스크톱 입력은 허용하지 않습니다.
+授權所有螢幕截圖 15 分鐘|Allow all-screen capture for 15 minutes|授权所有屏幕截图 15 分钟|全画面の撮影を15分間許可|모든 화면 캡처를 15분 동안 허용
+任務紀錄與疑難排解|Task history and troubleshooting|任务记录与故障排除|タスク履歴とトラブルシューティング|작업 기록 및 문제 해결
+這裡是以前執行過的工作與測試紀錄，平常不用操作。紀錄會保留，不影響你在 ChatGPT 開始新工作。|Past tasks and test results are kept here. These records do not affect new work in ChatGPT.|这里保存以往的任务与测试记录，不影响你在 ChatGPT 开始新工作。|過去の作業とテストの記録です。ChatGPT で新しい作業を始める際に影響しません。|이전 작업과 테스트 기록이 보관됩니다. ChatGPT에서 새 작업을 시작하는 데 영향을 주지 않습니다.
+選擇要查看的紀錄|Select a record|选择要查看的记录|表示する記録を選択|확인할 기록 선택
+選取紀錄後可查看執行結果。|Select a record to view its results.|选择记录后可查看执行结果。|記録を選択すると実行結果を確認できます。|기록을 선택하면 실행 결과를 볼 수 있습니다.
+變更與驗收|Changes and verification|更改与验收|変更と検証|변경 및 검증
+命令與測試輸出|Command and test output|命令与测试输出|コマンドとテストの出力|명령 및 테스트 출력
+事件時間線|Event timeline|事件时间线|イベント履歴|이벤트 타임라인
+人工處理（排除問題時使用）|Manual recovery (troubleshooting)|人工处理（排除问题时使用）|手動復旧（問題解決用）|수동 복구 (문제 해결용)
+先讀取狀態並調查副作用，再填寫處理依據。恢復寫入權會讓舊對話的權限失效。|Read the status and investigate side effects before recording your findings. Restoring write access invalidates the previous chat's access.|先读取状态并调查副作用，再填写处理依据。恢复写入权限会使旧对话的权限失效。|状態と副作用を確認してから対応の根拠を記入してください。書き込み権限を復旧すると以前のチャットの権限が無効になります。|상태와 부작용을 조사한 후 처리 근거를 입력하세요. 쓰기 권한을 복원하면 이전 대화의 권한이 무효화됩니다.
+操作識別碼|Operation ID|操作标识符|操作 ID|작업 ID
+Skills Manager 復原 run ID（建立紀錄的回應遺失時填寫）|Skills Manager recovery run ID (if the creation response was lost)|Skills Manager 恢复 run ID（创建记录的响应丢失时填写）|Skills Manager 復旧 run ID（作成応答が失われた場合）|Skills Manager 복구 run ID (생성 응답이 손실된 경우)
+我已查核 Skills Manager 的紀錄，確認這次操作沒有建立新 run|I checked Skills Manager records and confirmed this operation created no new run|我已检查 Skills Manager 的记录，确认本次操作未创建新 run|Skills Manager の記録を確認し、この操作で新しい run が作成されていないことを確認しました|Skills Manager 기록을 확인했으며 이 작업에서 새 run이 생성되지 않았습니다
+交接／新回復識別碼|Handoff / new recovery ID|交接／新恢复标识符|引き継ぎ／新規復旧 ID|인계 / 새 복구 ID
+例如 stage-2 或 restore-1|e.g. stage-2 or restore-1|例如 stage-2 或 restore-1|例：stage-2 または restore-1|예: stage-2 또는 restore-1
+調查紀錄／下一階段目標|Investigation notes / next-stage goal|调查记录／下一阶段目标|調査記録／次の段階の目標|조사 기록 / 다음 단계 목표
+回復已完成的檔案修改|Undo completed file changes|恢复已完成的文件更改|完了済みのファイル変更を元に戻す|완료된 파일 변경 되돌리기
+完成中斷的整批修改|Finish interrupted batch|完成中断的批量更改|中断した一括変更を完了|중단된 일괄 변경 완료
+還原中斷的整批修改|Roll back interrupted batch|还原中断的批量更改|中断した一括変更を元に戻す|중단된 일괄 변경 롤백
+確認未知瀏覽器／桌面操作|Review unknown browser / desktop operation|确认未知浏览器／桌面操作|結果不明のブラウザー／デスクトップ操作を確認|결과가 불명확한 브라우저 / 데스크톱 작업 검토
+核對未知技能流程操作|Review unknown skill workflow|核对未知技能流程操作|結果不明のスキル処理を確認|결과가 불명확한 스킬 흐름 검토
+取消任務|Cancel task|取消任务|タスクをキャンセル|작업 취소
+核對未知結果|Review unknown result|核对未知结果|不明な結果を確認|불명확한 결과 검토
+恢復寫入權|Restore write access|恢复写入权限|書き込み権限を復旧|쓰기 권한 복원
+建立接續內容|Prepare continuation|创建接续内容|引き継ぎ内容を作成|이어가기 내용 준비
+排入自動接續|Queue continuation|加入自动接续队列|自動引き継ぎを予約|자동 이어가기 대기열에 추가
+撤回未接手交接|Withdraw unclaimed handoff|撤回未接手的交接|未受領の引き継ぎを取り消す|미수락 인계 취소
+確認測試變更|Review test changes|确认测试更改|テストの変更を確認|테스트 변경 검토
+允許繼續修復|Allow further fixes|允许继续修复|修正の続行を許可|추가 수정 허용
+複製接續內容／處理結果|Copy continuation / result|复制接续内容／处理结果|引き継ぎ内容／結果をコピー|이어가기 내용 / 결과 복사
+修改資料夾|Change folder|修改文件夹|フォルダーを変更|폴더 변경
+資料夾完整路徑|Full folder path|文件夹完整路径|フォルダーのフルパス|전체 폴더 경로
+貼上專案資料夾的完整路徑|Paste the full project folder path|粘贴项目文件夹的完整路径|プロジェクトフォルダーのフルパスを貼り付け|전체 프로젝트 폴더 경로 붙여넣기
+儲存資料夾|Save folder|保存文件夹|フォルダーを保存|폴더 저장
+改為通用|Use as general plugin|改为通用|汎用プラグインに変更|공용 플러그인으로 변경
+請貼上資料夾完整路徑|Please paste the full folder path|请粘贴文件夹完整路径|フォルダーのフルパスを貼り付けてください|전체 폴더 경로를 붙여넣으세요
+通用：在對話中指定資料夾|General: specify a folder in chat|通用：在对话中指定文件夹|汎用：チャットでフォルダーを指定|공용: 대화에서 폴더 지정
+Forge 外掛|Forge plugin|Forge 插件|Forge プラグイン|Forge 플러그인
+尚無外掛紀錄。請先在 ChatGPT 使用 Forge，再按重新讀取。|No plugins yet. Use Forge in ChatGPT, then reload.|暂无插件记录。请先在 ChatGPT 使用 Forge，再重新读取。|プラグインの記録がありません。ChatGPT で Forge を使用してから再読み込みしてください。|플러그인 기록이 없습니다. ChatGPT에서 Forge를 사용한 후 새로 고침하세요.
+請選擇要授權的視窗|Select a window to authorize|请选择要授权的窗口|許可するウィンドウを選択してください|허용할 창을 선택하세요
+請先讀取並選擇視窗|List and select a window first|请先读取并选择窗口|先にウィンドウ一覧から選択してください|먼저 창 목록을 표시하고 선택하세요
+正在準備 ChatGPT 表單，請稍候…|Preparing the ChatGPT form…|正在准备 ChatGPT 表单，请稍候…|ChatGPT フォームを準備中…|ChatGPT 양식 준비 중…
+等待 Chrome|Waiting for Chrome|等待 Chrome|Chrome を待機中|Chrome 대기 중
+已連接：|Connected: |已连接：|接続済み：|연결됨: 
+共用入口 · 本機連線正常|Shared entry · local connection ready|共用入口 · 本机连接正常|共通入口 · ローカル接続正常|공유 진입점 · 로컬 연결 정상
+共用入口 · 尚未連線，請查看頁首提示|Shared entry · disconnected; see the notice above|共用入口 · 尚未连接，请查看页首提示|共通入口 · 未接続。上部の案内をご確認ください|공유 진입점 · 연결되지 않음. 상단 안내를 확인하세요
+本機連線正常 · {count} 個任務|Local connection ready · {count} tasks|本机连接正常 · {count} 个任务|ローカル接続正常 · {count} 件のタスク|로컬 연결 정상 · 작업 {count}개
+已讀取本機狀態|Local status loaded|已读取本机状态|ローカル状態を読み込みました|로컬 상태를 불러왔습니다
+已複製配對碼，請貼到 ChatGPTForge Chrome 擴充功能設定。|Pairing code copied. Paste it into the ChatGPTForge Chrome extension settings.|已复制配对码，请粘贴到 ChatGPTForge Chrome 扩展程序设置。|ペアリングコードをコピーしました。ChatGPTForge Chrome 拡張機能の設定に貼り付けてください。|페어링 코드를 복사했습니다. ChatGPTForge Chrome 확장 프로그램 설정에 붙여넣으세요.
+已複製|Copied|已复制|コピーしました|복사됨
+請手動選取並複製結果|Please select and copy the result manually|请手动选择并复制结果|結果を選択して手動でコピーしてください|결과를 직접 선택하고 복사하세요
+自訂預設專案已保存，重啟 Forge 後生效|Default project saved. Restart Forge to apply.|自定义默认项目已保存，重启 Forge 后生效|既定のプロジェクトを保存しました。Forge を再起動すると有効になります。|기본 프로젝트를 저장했습니다. Forge를 재시작하면 적용됩니다.
+已設定預設專案；未指定路徑時使用，仍可操作其他目錄|Default project set. Used when no path is specified; other folders remain accessible.|已设置默认项目；未指定路径时使用，仍可操作其他目录|既定のプロジェクトを設定しました。パス未指定時に使用し、他のフォルダーも操作できます。|기본 프로젝트를 설정했습니다. 경로를 지정하지 않을 때 사용하며 다른 폴더에도 접근할 수 있습니다.
+已設為通用入口|Set as general entry|已设为通用入口|汎用入口に設定しました|공용 진입점으로 설정됨
+專案已保存，重啟 Forge 後生效|Project saved. Restart Forge to apply.|项目已保存，重启 Forge 后生效|プロジェクトを保存しました。Forge を再起動してください。|프로젝트를 저장했습니다. Forge를 재시작하세요.
+網站已授權，本次服务有效|Website access granted for this session|网站已授权，本次服务有效|このセッションでサイトの操作を許可しました|이 세션에 웹사이트 접근이 허용됨
+已撤回所有桌面與視窗授權|All desktop and window access revoked|已撤回所有桌面与窗口授权|すべてのデスクトップとウィンドウの許可を取り消しました|모든 데스크톱 및 창 접근이 취소됨
+管理驗證尚未完成，授權與任務操作已停用。請從 Forge 啟動器開啟管理頁，或在專案中執行 scripts/Open-ForgeManager.ps1；只輸入 localhost 網址不會取得管理權限。|Management authentication is incomplete. Access and task actions are disabled. Open the manager from the Forge launcher or run scripts/Open-ForgeManager.ps1 in the project. A localhost URL alone does not grant management access.|管理验证尚未完成，授权与任务操作已停用。请从 Forge 启动器打开管理页，或运行 scripts/Open-ForgeManager.ps1；仅输入 localhost 地址不会取得管理权限。|管理認証が完了していないため操作できません。Forge ランチャー、またはプロジェクト内の scripts/Open-ForgeManager.ps1 から管理画面を開いてください。localhost の URL だけでは管理権限は得られません。|관리 인증이 완료되지 않아 접근 및 작업 기능이 비활성화되었습니다. Forge 실행기나 프로젝트의 scripts/Open-ForgeManager.ps1에서 관리 페이지를 여세요. localhost 주소만으로는 관리 권한을 얻을 수 없습니다.
+此分頁沒有管理驗證資訊，請在這個瀏覽器開啟啟動器產生的完整管理連結。|This tab has no management credentials. Open the full management link generated by the launcher in this browser.|此标签页没有管理验证信息，请在此浏览器打开启动器生成的完整管理链接。|このタブには管理認証情報がありません。このブラウザーでランチャーが生成した完全な管理リンクを開いてください。|이 탭에는 관리 인증 정보가 없습니다. 실행기가 생성한 전체 관리 링크를 이 브라우저에서 여세요.
+無法連到本機服務，請確認 ChatGPTForge 正在執行。|Cannot connect to the local service. Check that ChatGPTForge is running.|无法连接本机服务，请确认 ChatGPTForge 正在运行。|ローカルサービスに接続できません。ChatGPTForge が実行中か確認してください。|로컬 서비스에 연결할 수 없습니다. ChatGPTForge가 실행 중인지 확인하세요.
+管理連結已過期，請重新開啟啟動器產生的連結。|The management link expired. Reopen the link from the launcher.|管理链接已过期，请重新打开启动器生成的链接。|管理リンクの有効期限が切れました。ランチャーのリンクを開き直してください。|관리 링크가 만료되었습니다. 실행기의 링크를 다시 여세요.
+管理請求來源不符，請使用本機 127.0.0.1 的管理連結。|Management origin mismatch. Use the local 127.0.0.1 management link.|管理请求来源不符，请使用本机 127.0.0.1 的管理链接。|管理リクエストの送信元が一致しません。ローカルの 127.0.0.1 の管理リンクを使用してください。|관리 요청 출처가 일치하지 않습니다. 로컬 127.0.0.1 관리 링크를 사용하세요.
+管理請求失敗：HTTP |Management request failed: HTTP |管理请求失败：HTTP |管理リクエスト失敗：HTTP |관리 요청 실패: HTTP 
+檔案已變動，請重新讀取後核對。|Files changed. Reload and review them.|文件已更改，请重新读取并核对。|ファイルが変更されました。再読み込みして確認してください。|파일이 변경되었습니다. 새로 고침하고 검토하세요.
+Chrome 擴充功能尚未就緒，請先在 Chrome 啟用並更新 Forge 擴充功能|Chrome extension is not ready. Enable and update the Forge extension in Chrome.|Chrome 扩展程序尚未就绪，请先在 Chrome 启用并更新 Forge 扩展程序|Chrome 拡張機能の準備ができていません。Forge 拡張機能を有効化し更新してください|Chrome 확장 프로그램이 준비되지 않았습니다. Forge 확장 프로그램을 활성화하고 업데이트하세요
+新增外掛功能尚未啟用|Plugin creation is not enabled|添加插件功能尚未启用|プラグイン追加機能が有効ではありません|플러그인 생성 기능이 활성화되지 않았습니다
+請填寫外掛名稱（最多 80 字）|Enter a plugin name (up to 80 characters)|请填写插件名称（最多 80 字）|プラグイン名を80文字以内で入力してください|플러그인 이름을 80자 이내로 입력하세요
+請填寫資料夾完整路徑|Enter the full folder path|请填写文件夹完整路径|フォルダーのフルパスを入力してください|전체 폴더 경로를 입력하세요
+請選擇資料夾|Select a folder|请选择文件夹|フォルダーを選択してください|폴더를 선택하세요
+此外掛名稱已用於另一資料夾，請換個名稱|This plugin name is linked to another folder. Choose another name.|此插件名称已用于其他文件夹，请更换名称|この名前は別のフォルダーで使用されています。別の名前を選んでください|이 플러그인 이름은 다른 폴더에서 사용 중입니다. 다른 이름을 선택하세요
+此外掛名稱已存在|This plugin name already exists|此插件名称已存在|このプラグイン名は既に存在します|이미 존재하는 플러그인 이름입니다
+等待 Chrome 填入表單|Waiting for Chrome to fill the form|等待 Chrome 填写表单|Chrome のフォーム入力を待機中|Chrome 양식 입력 대기 중
+連接 ChatGPTForge|Connect ChatGPTForge|连接 ChatGPTForge|ChatGPTForge に接続|ChatGPTForge 연결
+僅在你有意將自己的 ChatGPT 或 MCP 用戶端連接至此電腦時才授權。|Only approve this if you are intentionally connecting your own ChatGPT or MCP client to this local machine.|仅在你有意将自己的 ChatGPT 或 MCP 客户端连接至此计算机时才授权。|自分の ChatGPT または MCP クライアントをこのコンピューターに接続する場合にのみ許可してください。|자신의 ChatGPT 또는 MCP 클라이언트를 이 컴퓨터에 연결하려는 경우에만 승인하세요.
+用戶端|Client|客户端|クライアント|클라이언트
+權限範圍|Scope|权限范围|権限範囲|권한 범위
+資源|Resource|资源|リソース|리소스
+專案外掛|Project plugin|项目插件|プロジェクトプラグイン|프로젝트 플러그인
+通用連接（不設定專案）|General connection (no project)|通用连接（不设置项目）|汎用接続（プロジェクト未設定）|공용 연결 (프로젝트 없음)
+確認上方是你正在安裝的外掛。授權後會自動對應資料夾。|Confirm this is the plugin you are installing. Its folder is linked after authorization.|确认上方是你正在安装的插件。授权后会自动关联文件夹。|インストールするプラグインであることを確認してください。許可後にフォルダーが関連付けられます。|설치할 플러그인인지 확인하세요. 승인 후 폴더가 연결됩니다.
+擁有者密碼|Owner password|所有者密码|所有者のパスワード|소유자 비밀번호
+授權 ChatGPTForge|Authorize ChatGPTForge|授权 ChatGPTForge|ChatGPTForge を許可|ChatGPTForge 승인
+擁有者密碼不正確。|The Owner password was not accepted.|所有者密码不正确。|所有者のパスワードが正しくありません。|소유자 비밀번호가 올바르지 않습니다.
+確認專案外掛|Confirm project plugin|确认项目插件|プロジェクトプラグインを確認|프로젝트 플러그인 확인
+ChatGPTForge Chrome 接續|ChatGPTForge Chrome continuation|ChatGPTForge Chrome 接续|ChatGPTForge Chrome 引き継ぎ|ChatGPTForge Chrome 이어가기
+沿用目前 Chrome 的登入|Use your current Chrome sign-in|沿用当前 Chrome 登录|現在の Chrome のログインを使用|현재 Chrome 로그인 사용
+此擴充功能只開啟新的 ChatGPT 交接分頁，不讀取 Cookie、密碼或其他分頁。不需要再登入另一個瀏覽器。|This extension opens new ChatGPT handoff tabs without reading cookies, passwords, or other tabs. No separate browser sign-in is needed.|此扩展程序只打开新的 ChatGPT 交接标签页，不读取 Cookie、密码或其他标签页。无需登录另一个浏览器。|この拡張機能は新しい ChatGPT 引き継ぎタブを開きます。Cookie、パスワード、他のタブは読みません。別のブラウザーへのログインは不要です。|이 확장 프로그램은 새 ChatGPT 인계 탭을 열며 쿠키, 비밀번호, 다른 탭을 읽지 않습니다. 다른 브라우저에 로그인할 필요가 없습니다.
+本機管理服務|Local management service|本机管理服务|ローカル管理サービス|로컬 관리 서비스
+配對碼（從 ChatGPTForge 管理頁取得）|Pairing code (from ChatGPTForge management)|配对码（从 ChatGPTForge 管理页获取）|ペアリングコード（ChatGPTForge 管理画面から取得）|페어링 코드 (ChatGPTForge 관리 페이지에서 확인)
+啟用自動接續（每 30 秒檢查）|Enable automatic continuation (checks every 30 seconds)|启用自动接续（每 30 秒检查）|自動引き継ぎを有効化（30秒ごとに確認）|자동 이어가기 활성화 (30초마다 확인)
+保存設定|Save settings|保存设置|設定を保存|설정 저장
+立即檢查|Check now|立即检查|今すぐ確認|지금 확인
+已保存配對碼，尚未檢查連線|Pairing code saved; connection not checked yet|已保存配对码，尚未检查连接|ペアリングコード保存済み。接続は未確認です|페어링 코드 저장됨. 연결은 아직 확인하지 않음
+尚未填入並保存配對碼|Enter and save a pairing code|尚未填写并保存配对码|ペアリングコードを入力して保存してください|페어링 코드를 입력하고 저장하세요
+請使用本機 http://127.0.0.1:連接埠|Use a local http://127.0.0.1:port address|请使用本机 http://127.0.0.1:端口|ローカルの http://127.0.0.1:ポート を使用してください|로컬 http://127.0.0.1:포트 주소를 사용하세요
+設定已保存，尚未檢查連線|Settings saved; connection not checked yet|设置已保存，尚未检查连接|設定を保存しました。接続は未確認です|설정 저장됨. 연결은 아직 확인하지 않음
+設定尚未保存，請先按「保存設定」|Settings are unsaved. Click “Save settings” first.|设置尚未保存，请先点击“保存设置”|設定は未保存です。先に「設定を保存」をクリックしてください|설정이 저장되지 않았습니다. 먼저 “설정 저장”을 클릭하세요.
+自動接續未啟用；請勾選啟用並保存設定後再檢查|Automatic continuation is disabled. Enable it and save settings before checking.|自动接续未启用；请勾选启用并保存设置后再检查|自動引き継ぎは無効です。有効にして設定を保存してから確認してください|자동 이어가기가 비활성화되어 있습니다. 활성화하고 설정을 저장한 후 확인하세요.
+正在檢查…|Checking…|正在检查…|確認中…|확인 중…
+檢查失敗：|Check failed: |检查失败：|確認失敗：|확인 실패: 
+缺少配對碼；請填入並保存設定|Pairing code missing. Enter it and save settings.|缺少配对码；请填写并保存设置|ペアリングコードがありません。入力して保存してください|페어링 코드가 없습니다. 입력하고 설정을 저장하세요.
+已連線，等待交接|Connected; waiting for handoff|已连接，等待交接|接続済み。引き継ぎを待機中|연결됨. 인계 대기 중
+專案外掛表單已處理，請查看 ChatGPT 分頁|Project plugin form prepared. Check the ChatGPT tab.|项目插件表单已处理，请查看 ChatGPT 标签页|プロジェクトプラグインのフォームを処理しました。ChatGPT タブをご確認ください|프로젝트 플러그인 양식을 처리했습니다. ChatGPT 탭을 확인하세요.
+已送出，等待 ChatGPT 確認接手|Sent; waiting for ChatGPT to claim the handoff|已发送，等待 ChatGPT 确认接手|送信済み。ChatGPT の引き継ぎ確認を待機中|전송됨. ChatGPT의 인계 수락 대기 중
+送出結果不明，禁止重送：|Submission outcome unknown; do not resend: |发送结果不明，禁止重发：|送信結果が不明です。再送禁止：|전송 결과 불명. 재전송 금지: 
+需要人工處理：|Manual action required: |需要人工处理：|手動対応が必要：|수동 조치 필요: 
+已核對原分頁送出紀錄，等待 ChatGPT 接手|Original submission confirmed; waiting for ChatGPT|已核对原标签页发送记录，等待 ChatGPT 接手|元のタブの送信を確認しました。ChatGPT を待機中|원래 탭의 전송 확인됨. ChatGPT 대기 중
+中斷的交接需要核對；已保留原分頁，未重送|Interrupted handoff needs review. Original tab preserved; nothing resent.|中断的交接需要核对；已保留原标签页，未重发|中断した引き継ぎの確認が必要です。元のタブを保持し、再送していません|중단된 인계를 검토해야 합니다. 원래 탭을 보존했으며 재전송하지 않았습니다.
+交接仍等待確認；未重送|Handoff still awaiting confirmation; nothing resent|交接仍等待确认；未重发|引き継ぎは確認待ちです。再送していません|인계 확인 대기 중. 재전송하지 않음
+ChatGPT 已確認接手，任務可在新對話繼續|ChatGPT claimed the handoff. Continue in the new chat.|ChatGPT 已确认接手，任务可在新对话继续|ChatGPT が引き継ぎを受領しました。新しいチャットで続行できます|ChatGPT가 인계를 수락했습니다. 새 대화에서 계속하세요.
+交接已撤回|Handoff withdrawn|交接已撤回|引き継ぎを取り消しました|인계 취소됨
+交接已停止，請查看原始原因|Handoff stopped. Check the original reason.|交接已停止，请查看原始原因|引き継ぎを停止しました。元の原因をご確認ください|인계가 중지되었습니다. 원래 사유를 확인하세요.
+ChatGPTForge 工作區|ChatGPTForge Workspace|ChatGPTForge 工作区|ChatGPTForge ワークスペース|ChatGPTForge 작업 공간
+正在連接主機…|Connecting to host...|正在连接主机…|ホストに接続中…|호스트에 연결 중…
+等待工具結果。|Waiting for a tool result.|等待工具结果。|ツールの結果を待機中。|도구 결과 대기 중.
+正在載入檢視…|Loading review...|正在加载审查…|レビューを読み込み中…|검토 불러오는 중…
+差異統計|Diff statistics|差异统计|差分の統計|차이 통계
+變更已準備就緒|Changes ready|更改已准备就绪|変更の準備完了|변경 준비 완료
+沒有變更|No changes|没有更改|変更なし|변경 없음
+已重用工作區|Reused workspace|已复用工作区|ワークスペースを再利用|작업 공간 재사용됨
+已開啟工作區|Opened workspace|已打开工作区|ワークスペースを開きました|작업 공간 열림
+工作區|Workspace|工作区|ワークスペース|작업 공간
+工作樹|Worktree|工作树|ワークツリー|작업 트리
+建立此工作樹時，來源目錄有尚未提交的變更。此處不包含這些變更。|The source checkout had uncommitted changes when this worktree was created. Those changes are not included here.|创建此工作树时，源目录有尚未提交的更改。此处不包含这些更改。|このワークツリーの作成時、元のチェックアウトに未コミットの変更がありました。それらの変更は含まれません。|이 작업 트리를 만들 때 원본에 커밋되지 않은 변경이 있었습니다. 해당 변경은 포함되지 않습니다.
+此工作樹不包含來源目錄的變更|Source checkout changes are not included in this worktree|此工作树不包含源目录的更改|元のチェックアウトの変更は含まれません|이 작업 트리에 원본 변경이 포함되지 않음
+基準|Base|基准|ベース|기준
+來源目錄|Source checkout|源目录|元のチェックアウト|원본 체크아웃
+檢視|Review|审查|レビュー|검토
+未命名代理|Unnamed agent|未命名代理|名前のないエージェント|이름 없는 에이전트
+未知供應商|Unknown provider|未知提供商|不明なプロバイダー|알 수 없는 공급자
+代理|Agents|代理|エージェント|에이전트
+供應商|Providers|提供商|プロバイダー|공급자
+沒有可用的工作區詳細資料。|No workspace details available.|没有可用的工作区详情。|ワークスペースの詳細はありません。|작업 공간 세부 정보가 없습니다.
+已載入指示|Loaded instructions|已加载指令|読み込み済みの指示|불러온 지침
+子目錄指示|Nested instructions|子目录指令|下位ディレクトリの指示|하위 폴더 지침
+顯示較少|Show less|显示更少|表示を減らす|간략히 보기
+查看全部|View all|查看全部|すべて表示|모두 보기
+僅顯示已載入的指示檔案|Show only loaded instruction files|仅显示已加载的指令文件|読み込み済みの指示ファイルのみ表示|불러온 지침 파일만 표시
+查看全部 {count} 個可用指示檔案|View all {count} available instruction files|查看全部 {count} 个可用指令文件|利用可能な指示ファイル {count} 件をすべて表示|사용 가능한 지침 파일 {count}개 모두 보기
+檢視 {name}|View {name}|查看 {name}|{name} を表示|{name} 보기
+指示|Instructions|指令|指示|지침
+已載入目前工作區內容|Loaded into the current workspace context|已加载到当前工作区上下文|現在のワークスペースのコンテキストに読み込み済み|현재 작업 공간 컨텍스트에 불러옴
+可用於子目錄|Available for a nested directory|可用于子目录|下位ディレクトリで利用可能|하위 폴더에서 사용 가능
+未命名技能|Unnamed skill|未命名技能|名前のないスキル|이름 없는 스킬
+技能|Skills|技能|スキル|스킬
+差異內容無法使用。|Diff payload is not available.|差异内容不可用。|差分データを利用できません。|차이 데이터를 사용할 수 없습니다.
+沒有可檢視的差異區塊。|No diff hunks to review.|没有可审查的差异块。|確認する差分ブロックがありません。|검토할 차이 블록이 없습니다.
+主機回傳的歷史檢視不完整。|The host returned an incomplete historical review.|主机返回的历史审查不完整。|ホストが返した過去のレビューは不完全です。|호스트가 불완전한 이전 검토를 반환했습니다.
+應用程式橋接尚未連線。|The app bridge is not connected.|应用桥接尚未连接。|アプリブリッジが接続されていません。|앱 브리지가 연결되지 않았습니다.
+此主機無法重新載入歷史檢視詳細資料。|This host cannot reload historical review details.|此主机无法重新加载历史审查详情。|このホストは過去のレビューの詳細を再読み込みできません。|이 호스트는 이전 검토 세부 정보를 다시 불러올 수 없습니다.
+再顯示 {count} 個檔案|Show {count} more files|再显示 {count} 个文件|さらに {count} 件のファイルを表示|파일 {count}개 더 보기
+再顯示 {count} 個檔案|Show {count} more file|再显示 {count} 个文件|さらに {count} 件のファイルを表示|파일 {count}개 더 보기
+{count} 個指示|{count} instructions|{count} 条指令|{count} 件の指示|지침 {count}개
+{count} 個指示|{count} instruction|{count} 条指令|{count} 件の指示|지침 {count}개
+{count} 個技能|{count} skills|{count} 个技能|{count} 件のスキル|스킬 {count}개
+{count} 個技能|{count} skill|{count} 个技能|{count} 件のスキル|스킬 {count}개
+供應商：{name}|Provider: {name}|提供商：{name}|プロバイダー：{name}|공급자: {name}
+模型：{name}|Model: {name}|模型：{name}|モデル：{name}|모델: {name}
+推理強度：{name}|Effort: {name}|推理强度：{name}|推論強度：{name}|추론 강도: {name}
+新增|Added|新增|追加|추가됨
+修改|Edited|修改|編集|수정됨
+刪除|Deleted|删除|削除|삭제됨
+重新命名|Renamed|重命名|名前変更|이름 변경됨
+重新命名並修改|Renamed and edited|重命名并修改|名前変更と編集|이름 변경 및 수정됨
+已變更|Changed|已更改|変更|변경됨
+已變更 {count} 個檔案|Changed {count} files|已更改 {count} 个文件|{count} 件のファイルを変更|파일 {count}개 변경됨
+已變更 {count} 個檔案|Changed {count} file|已更改 {count} 个文件|{count} 件のファイルを変更|파일 {count}개 변경됨
+新增 {count} 個檔案|Added {count} files|新增 {count} 个文件|{count} 件のファイルを追加|파일 {count}개 추가됨
+新增 {count} 個檔案|Added {count} file|新增 {count} 个文件|{count} 件のファイルを追加|파일 {count}개 추가됨
+修改 {count} 個檔案|Edited {count} files|修改 {count} 个文件|{count} 件のファイルを編集|파일 {count}개 수정됨
+修改 {count} 個檔案|Edited {count} file|修改 {count} 个文件|{count} 件のファイルを編集|파일 {count}개 수정됨
+刪除 {count} 個檔案|Deleted {count} files|删除 {count} 个文件|{count} 件のファイルを削除|파일 {count}개 삭제됨
+刪除 {count} 個檔案|Deleted {count} file|删除 {count} 个文件|{count} 件のファイルを削除|파일 {count}개 삭제됨
+重新命名 {count} 個檔案|Renamed {count} files|重命名 {count} 个文件|{count} 件のファイルの名前を変更|파일 {count}개 이름 변경됨
+重新命名 {count} 個檔案|Renamed {count} file|重命名 {count} 个文件|{count} 件のファイルの名前を変更|파일 {count}개 이름 변경됨
+重新命名並修改 {count} 個檔案|Renamed and edited {count} files|重命名并修改 {count} 个文件|{count} 件のファイルの名前変更と編集|파일 {count}개 이름 변경 및 수정됨
+重新命名並修改 {count} 個檔案|Renamed and edited {count} file|重命名并修改 {count} 个文件|{count} 件のファイルの名前変更と編集|파일 {count}개 이름 변경 및 수정됨
+已儲存語言選擇|Language preference saved|已保存语言选择|言語設定を保存しました|언어 설정 저장됨
+ChatGPTForge（通用 · {id}）|ChatGPTForge (general · {id})|ChatGPTForge（通用 · {id}）|ChatGPTForge（汎用 · {id}）|ChatGPTForge (공용 · {id})
+Skills Manager 未設定，請先恢復原服務端點|Skills Manager is not configured. Restore its service endpoint.|Skills Manager 未配置，请先恢复原服务端点|Skills Manager が設定されていません。サービスエンドポイントを復旧してください|Skills Manager가 설정되지 않았습니다. 서비스 엔드포인트를 복원하세요
+未知操作已人工核對；原操作仍不可重送，請重新驗收|Unknown operation reviewed. Do not replay it; verify again.|未知操作已人工核对；原操作仍不可重发，请重新验收|結果不明の操作を手動確認しました。再実行せず、再検証してください|결과가 불명확한 작업을 검토했습니다. 재실행하지 말고 다시 검증하세요.
+請填寫技能操作識別碼、調查紀錄及核對後的流程紀錄|Enter the skill operation ID, investigation notes, and reviewed workflow records|请填写技能操作标识符、调查记录及核对后的流程记录|スキル操作 ID、調査記録、確認済みの処理記録を入力してください|스킬 작업 ID, 조사 기록 및 검토한 흐름 기록을 입력하세요
+請填寫調查紀錄及新的回復識別碼|Enter investigation notes and a new recovery ID|请填写调查记录及新的恢复标识符|調査記録と新しい復旧 ID を入力してください|조사 기록과 새 복구 ID를 입력하세요
+請指定 finish 或 rollback|Specify finish or rollback|请指定 finish 或 rollback|finish または rollback を指定してください|finish 또는 rollback을 지정하세요
+請等待操作停止，並填寫人工核對紀錄|Wait for the operation to stop and enter manual review notes|请等待操作停止，并填写人工核对记录|操作の停止を待って、手動確認の記録を入力してください|작업이 중지될 때까지 기다리고 수동 검토 기록을 입력하세요
+找不到共用 Tunnel，請先啟動 Forge Tunnel|Shared Tunnel not found. Start Forge Tunnel first.|找不到共用 Tunnel，请先启动 Forge Tunnel|共通 Tunnel が見つかりません。先に Forge Tunnel を起動してください|공유 Tunnel을 찾을 수 없습니다. 먼저 Forge Tunnel을 시작하세요.
+找不到外掛|Plugin not found|找不到插件|プラグインが見つかりません|플러그인을 찾을 수 없습니다
+找不到外掛包|Plugin package not found|找不到插件包|プラグインパッケージが見つかりません|플러그인 패키지를 찾을 수 없습니다
+找不到待連接的專案外掛|Pending project plugin not found|找不到待连接的项目插件|接続待ちのプロジェクトプラグインが見つかりません|연결 대기 중인 프로젝트 플러그인을 찾을 수 없습니다
+正在開啟 ChatGPT|Opening ChatGPT|正在打开 ChatGPT|ChatGPT を開いています|ChatGPT 여는 중
+此外掛已完成連接|This plugin is already connected|此插件已完成连接|このプラグインは接続済みです|이 플러그인은 이미 연결되었습니다
+此外掛已連接或不存在|This plugin is already connected or does not exist|此插件已连接或不存在|このプラグインは接続済みか、存在しません|이 플러그인은 이미 연결되었거나 존재하지 않습니다
+此連接已使用，請勿覆蓋既有外掛|This connection is in use. Do not overwrite the existing plugin.|此连接已使用，请勿覆盖现有插件|この接続は使用中です。既存のプラグインを上書きしないでください|이 연결은 사용 중입니다. 기존 플러그인을 덮어쓰지 마세요.
+Forge 本機服務版本較舊，請更新並重新啟動 Forge 服務；不用重填配對碼|The local Forge service is outdated. Update and restart it; the pairing code can be kept.|Forge 本机服务版本较旧，请更新并重启服务；无需重新填写配对码|ローカル Forge サービスが古くなっています。更新して再起動してください。ペアリングコードの再入力は不要です|로컬 Forge 서비스가 오래되었습니다. 업데이트하고 재시작하세요. 페어링 코드는 유지할 수 있습니다.
+Forge 連線失敗（{status}），請查看本機服務狀態|Forge connection failed ({status}). Check the local service.|Forge 连接失败（{status}），请查看本机服务状态|Forge 接続失敗（{status}）。ローカルサービスを確認してください|Forge 연결 실패 ({status}). 로컬 서비스를 확인하세요.
+交接已撤回或接手，停止送出|Handoff withdrawn or claimed. Submission stopped.|交接已撤回或接手，停止发送|引き継ぎは取り消し済みか受領済みです。送信を停止しました|인계가 취소되었거나 수락되었습니다. 전송을 중지했습니다.
+找不到 ChatGPTForge 外掛，請手動啟用|ChatGPTForge plugin not found. Enable it manually.|找不到 ChatGPTForge 插件，请手动启用|ChatGPTForge プラグインが見つかりません。手動で有効にしてください|ChatGPTForge 플러그인을 찾을 수 없습니다. 직접 활성화하세요.
+找到多個輸入框，停止以免填入錯誤位置|Multiple composers found. Stopped to avoid filling the wrong one.|找到多个输入框，已停止以免填写错误位置|入力欄が複数あるため、誤入力を防ぐため停止しました|입력창이 여러 개여서 잘못 입력하지 않도록 중지했습니다.
+新分頁有既有草稿，保留草稿並停止|The new tab contains a draft. Draft preserved; stopped.|新标签页已有草稿，已保留草稿并停止|新しいタブに下書きがあります。下書きを保持して停止しました|새 탭에 초안이 있습니다. 초안을 보존하고 중지했습니다.
+此交接已嘗試送出，禁止重送|This handoff was already attempted. Do not resend.|此交接已尝试发送，禁止重发|この引き継ぎは送信を試行済みです。再送しないでください|이 인계는 이미 전송을 시도했습니다. 재전송하지 마세요.
+無法唯一辨識輸入框或送出按鈕，停止送出|Cannot uniquely identify the composer or send button. Submission stopped.|无法唯一识别输入框或发送按钮，已停止发送|入力欄または送信ボタンを一意に特定できないため、送信を停止しました|입력창이나 전송 버튼을 정확히 식별할 수 없어 전송을 중지했습니다.
+無法填入交接內容|Unable to fill the handoff content|无法填写交接内容|引き継ぎ内容を入力できません|인계 내용을 입력할 수 없습니다
+無法確認送出；請檢查新分頁，禁止重送|Submission cannot be confirmed. Check the new tab; do not resend.|无法确认发送；请检查新标签页，禁止重发|送信を確認できません。新しいタブを確認し、再送しないでください|전송을 확인할 수 없습니다. 새 탭을 확인하고 재전송하지 마세요.
+等待 ChatGPT 輸入框逾時；頁面尚未就緒或介面已改版，不能據此判定未登入|Timed out waiting for the ChatGPT composer. The page may be loading or changed; this does not establish sign-in status.|等待 ChatGPT 输入框超时；页面尚未就绪或界面已更改，不能据此判定未登录|ChatGPT 入力欄の待機がタイムアウトしました。読み込み中または画面変更の可能性があり、未ログインとは判断できません|ChatGPT 입력창 대기 시간이 초과되었습니다. 페이지가 로딩 중이거나 변경되었을 수 있으며 로그인 여부를 판단할 수 없습니다.
+輸入或送出按鈕狀態已變動|Composer or send button state changed|输入框或发送按钮状态已更改|入力欄または送信ボタンの状態が変わりました|입력창 또는 전송 버튼 상태가 변경되었습니다
+ChatGPT 表單已填好。請在新分頁確認建立，再按 Connect。|ChatGPT form filled. Confirm creation in the new tab, then click Connect.|ChatGPT 表单已填好。请在新标签页确认创建，再点击 Connect。|ChatGPT フォームを入力しました。新しいタブで作成を確認し、Connect をクリックしてください|ChatGPT 양식을 입력했습니다. 새 탭에서 생성을 확인한 후 Connect를 클릭하세요.
+無法自動填表：|Unable to fill the form automatically: |无法自动填写表单：|フォームを自動入力できません：|양식을 자동으로 입력할 수 없습니다: 
+。未自動建立或重送外掛。|. No plugin was automatically created or resent.|。未自动创建或重发插件。|。プラグインの自動作成や再送は行っていません。|. 플러그인을 자동으로 생성하거나 재전송하지 않았습니다.
+表單未就緒|Form not ready|表单尚未就绪|フォームの準備ができていません|양식이 준비되지 않았습니다
+新增選單|Add menu|添加菜单|追加メニュー|추가 메뉴
+等待「{step}」逾時|Timed out waiting for “{step}”|等待“{step}”超时|「{step}」の待機がタイムアウトしました|“{step}” 대기 시간 초과
+此工具結果沒有可用的結果卡片。|No result card is available for this tool result.|此工具结果没有可用的结果卡片。|このツールの結果カードはありません。|이 도구 결과에 사용할 수 있는 카드가 없습니다.
+專案綁定無法使用|Project bindings unavailable|项目绑定不可用|プロジェクトの関連付けを利用できません|프로젝트 연결을 사용할 수 없습니다
+專案選擇無法使用|Project selection unavailable|项目选择不可用|プロジェクトの選択を利用できません|프로젝트 선택을 사용할 수 없습니다
+瀏覽器無法使用|Browser unavailable|浏览器不可用|ブラウザーを利用できません|브라우저를 사용할 수 없습니다
+桌面無法使用|Desktop unavailable|桌面不可用|デスクトップを利用できません|데스크톱을 사용할 수 없습니다
+→ 通用：在對話中指定資料夾|→ General: specify a folder in chat|→ 通用：在对话中指定文件夹|→ 汎用：チャットでフォルダーを指定|→ 공용: 대화에서 폴더 지정
+請使用 ChatGPTForge 的 handoff_claim 接手以下任務，再讀取 task_resume。保持同一 recipient_key 重試，接手成功後保存新的 lease_token。|Claim this task with ChatGPTForge handoff_claim, then read task_resume. Retry with the same recipient_key and save the new lease_token after claiming.|请使用 ChatGPTForge 的 handoff_claim 接手此任务，再读取 task_resume。使用相同的 recipient_key 重试，并在接手后保存新的 lease_token。|ChatGPTForge の handoff_claim でこのタスクを受領し、task_resume を読んでください。同じ recipient_key で再試行し、受領後に新しい lease_token を保存してください。|ChatGPTForge handoff_claim으로 이 작업을 수락한 후 task_resume을 읽으세요. 동일한 recipient_key로 재시도하고 수락 후 새 lease_token을 저장하세요.
+ChatGPTForge 接續設定|ChatGPTForge continuation settings|ChatGPTForge 接续设置|ChatGPTForge 引き継ぎ設定|ChatGPTForge 이어가기 설정
+透過目前已登入的 Chrome 接續本機記錄的 ChatGPTForge 工作，不呼叫模型 API。|Continue locally journaled ChatGPTForge handoffs using your existing signed-in Chrome. No model API calls.|通过当前已登录的 Chrome 接续本机记录的 ChatGPTForge 工作，不调用模型 API。|ログイン済みの Chrome を使い、ローカルに記録した ChatGPTForge の引き継ぎを続行します。モデル API は呼び出しません。|로그인된 Chrome으로 로컬에 기록된 ChatGPTForge 인계를 이어갑니다. 모델 API를 호출하지 않습니다.

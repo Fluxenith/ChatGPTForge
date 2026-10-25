@@ -1,0 +1,8 @@
+{
+  "extensionSettings": {
+    "message": "ChatGPTForge continuation settings"
+  },
+  "extensionDescription": {
+    "message": "Continue locally journaled ChatGPTForge handoffs using your existing signed-in Chrome. No model API calls."
+  }
+}

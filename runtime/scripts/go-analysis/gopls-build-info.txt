@@ -1,0 +1,31 @@
+gopls.exe: go1.26.2
+	path	golang.org/x/tools/gopls
+	mod	golang.org/x/tools/gopls	v0.23.0	h1:Dn6mf9WXu9iLnTftDDMb9wV0c6Se7PjzEMqP0LEe08Y=
+	dep	github.com/BurntSushi/toml	v1.6.0	h1:dRaEfpa2VI55EwlIW72hMRHdWouJeRF7TPYhI+AUQjk=
+	dep	github.com/fatih/camelcase	v1.0.0	h1:hxNvNX/xYBp0ovncs8WyWZrOrpBNub/JfaMvbURyft8=
+	dep	github.com/fatih/gomodifytags	v1.17.1-0.20250423142747-f3939df9aa3c	h1:dDSgAjoOMp8da3egfz0t2S+t8RGOpEmEXZubcGuc0Bg=
+	dep	github.com/fatih/structtag	v1.2.0	h1:/OdNE99OxoI/PqaW/SuSK9uxxT3f/tcSZgon/ssNSx4=
+	dep	github.com/fsnotify/fsnotify	v1.9.0	h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=
+	dep	github.com/google/jsonschema-go	v0.4.3	h1:/DBOLZTfDow7pe2GmaJNhltueGTtDKICi8V8p+DQPd0=
+	dep	github.com/modelcontextprotocol/go-sdk	v1.6.0	h1:PPLS3kn7WtOEnR+Af4X5H96SG0qSab8R/ZQT/HkhPkY=
+	dep	github.com/segmentio/asm	v1.2.1	h1:DTNbBqs57ioxAD4PrArqftgypG4/qNpXoJx8TVXxPR0=
+	dep	github.com/segmentio/encoding	v0.5.4	h1:OW1VRern8Nw6ITAtwSZ7Idrl3MXCFwXHPgqESYfvNt0=
+	dep	github.com/yosida95/uritemplate/v3	v3.0.2	h1:Ed3Oyj9yrmi9087+NczuL5BwkIc4wvTb5zIM+UJPGz4=
+	dep	golang.org/x/exp/typeparams	v0.0.0-20260611194520-c48552f49976	h1:GTD/WuaexTazIG/SxLOz4rEKZPDVilmVVC2nz4xhwfE=
+	dep	golang.org/x/mod	v0.37.0	h1:vF1DjpVEshcIqoEaauuHebaLk1O1forxjxBaVn884JQ=
+	dep	golang.org/x/oauth2	v0.36.0	h1:peZ/1z27fi9hUOFCAZaHyrpWG5lwe0RJEEEeH0ThlIs=
+	dep	golang.org/x/sync	v0.21.0	h1:HLII4xRRTtCRkxYp4HNFF0Js/Og6q2i++KXbg0gHCwM=
+	dep	golang.org/x/sys	v0.46.0	h1:noSf2Fq6F8DBgS+LysIkx7rIExoNHJsxOAtPp4rthXw=
+	dep	golang.org/x/telemetry	v0.0.0-20260625142307-59b4966ccb57	h1:nwGZBCt+FnXUrGsj5vjzAsEmkcaFvd82BbOjECiFYZc=
+	dep	golang.org/x/text	v0.38.0	h1:sXmwo9DwP3OK9EZ7PqAdaooSGozfl/3a6/xJcbzPRhE=
+	dep	golang.org/x/tools	v0.47.1-0.20260707181000-a299dadba899	h1:5O28oLQxJ1jif5UNdi9OULXCd4g3rsy3xkECh96fnf8=
+	dep	golang.org/x/vuln	v1.4.0	h1:FpmTZiV4PyqY3lFfuCkz1JftEXb/+8M2NEkjJM5TF4g=
+	dep	honnef.co/go/tools	v0.8.0-rc.1	h1:wqMm2kjcEXMOr+6yau+pdKqJKe6l2N1aKPkpini+Kzk=
+	dep	mvdan.cc/gofumpt	v0.10.0	h1:yGGpRS2pBN2OQIi7b21IXknJna7faPkFaVfHLrN6Euo=
+	dep	mvdan.cc/xurls/v2	v2.6.0	h1:3NTZpeTxYVWNSokW3MKeyVkz/j7uYXYiMtXRUfmjbgI=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	CGO_ENABLED=0
+	build	GOARCH=amd64
+	build	GOOS=windows
+	build	GOAMD64=v1

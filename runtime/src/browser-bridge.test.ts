@@ -1,0 +1,64 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtempSync,mkdirSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {DurableTasks} from './durable-tasks.js';
+import {BrowserBridge,expectedExtensionVersion,browserWorkerStatus} from './browser-bridge.js';
+const V=expectedExtensionVersion();
+test('existing-browser bridge claims delivery once and never requeues unknown submission',t=>{
+  const root=mkdtempSync(join(tmpdir(),'forge-bridge-')),project=join(root,'project');mkdirSync(project);
+  const e=new DurableTasks(join(root,'state'));t.after(()=>{e.close();rmSync(root,{recursive:true,force:true,maxRetries:10});});
+  const bridge=new BrowserBridge(e),task=e.create(project,'bridge','bridge',['echo ok'],true);
+  const h=e.prepareHandoff(task.task_id,'next',task.fingerprint,'continue',task.lease_token!);
+  e.queueContinuation(task.task_id,h.handoff_id,task.lease_token!);
+  assert.throws(()=>bridge.take(task.task_id,h.handoff_id,'0.4.3'),(e:Error)=>e.message.includes('0.4.3 is not '+V));assert.throws(()=>bridge.take(task.task_id,h.handoff_id),/reload the unpacked extension/);
+  assert.equal(bridge.candidates().length,1,'a stale worker never takes the delivery');
+  const first=bridge.take(task.task_id,h.handoff_id,V)!;assert.ok(first);
+  assert.equal(bridge.take(task.task_id,h.handoff_id,V),null);
+  assert.throws(()=>bridge.update(task.task_id,h.handoff_id,'wrong','submitting','https://chatgpt.com/',''),/Invalid delivery/);
+  bridge.update(task.task_id,h.handoff_id,first.delivery_id,'submitting','https://chatgpt.com/','before click');
+  bridge.update(task.task_id,h.handoff_id,first.delivery_id,'unknown','https://chatgpt.com/','lost response');
+  e.queueContinuation(task.task_id,h.handoff_id,task.lease_token!);
+  assert.equal(bridge.candidates().length,0);
+  assert.throws(()=>bridge.update(task.task_id,h.handoff_id,first.delivery_id,'submitting','https://chatgpt.com/','retry'),/never resend/);
+  const claimed=e.claimHandoff(task.task_id,h.handoff_id,h.claim_token,'receiver',task.fingerprint);
+  assert.equal(claimed.continuity.workspace_matches,true);assert.equal(claimed.continuity.workspace_fingerprint,task.fingerprint);
+  assert.equal(claimed.continuity.operations_since_prepare,0);assert.match(claimed.continuity.context_sha256,/^[0-9a-f]{64}$/);
+  assert.deepEqual(claimed.continuity.events_since_prepare,['handoff_prepared','handoff_claimed']);
+  assert.deepEqual(e.claimHandoff(task.task_id,h.handoff_id,h.claim_token,'receiver',task.fingerprint).continuity.context_sha256,claimed.continuity.context_sha256,'retrying the same claim returns the same proof');
+  assert.equal((e.status(task.task_id).continuation[0] as {state:string}).state,'claimed');
+});
+
+test('worker status reports missing, stale-version and current continuation workers',t=>{
+  const root=mkdtempSync(join(tmpdir(),'forge-bridge-worker-'));
+  const e=new DurableTasks(join(root,'state'));t.after(()=>{e.close();rmSync(root,{recursive:true,force:true,maxRetries:10});});
+  const bridge=new BrowserBridge(e);
+  assert.equal(browserWorkerStatus(e.db).ready,false);assert.match(browserWorkerStatus(e.db).reason!,/No continuation worker/);
+  bridge.seen('0.4.3');assert.equal(bridge.workerStatus().ready,false);assert.match(bridge.workerStatus().reason!,/0\.4\.3 is not/);
+  bridge.seen(V);const s=bridge.workerStatus();assert.equal(s.ready,true);assert.equal(s.reported_version,V);assert.equal(s.reason,null);
+  e.db.prepare("UPDATE browser_workers SET seen=?").run(Date.now()-10*60_000);assert.match(bridge.workerStatus().reason!,/not polled/);
+});
+
+test('delivery recovery is observable, acknowledgements are idempotent, and late reports never demote a claim',t=>{
+  const root=mkdtempSync(join(tmpdir(),'forge-bridge-restart-')),project=join(root,'project');mkdirSync(project);
+  let e=new DurableTasks(join(root,'state'));
+  t.after(()=>{e.close();rmSync(root,{recursive:true,force:true,maxRetries:10});});
+  let bridge=new BrowserBridge(e);
+  const task=e.create(project,'bridge','bridge',['echo ok'],true);
+  const h=e.prepareHandoff(task.task_id,'next',task.fingerprint,'continue',task.lease_token!);
+  e.queueContinuation(task.task_id,h.handoff_id,task.lease_token!);
+  const job=bridge.take(task.task_id,h.handoff_id,V)!;
+  const update=(state:string)=>bridge.update(task.task_id,h.handoff_id,job.delivery_id,state,'https://chatgpt.com/c/fixture','receipt');
+  update('submitting');assert.deepEqual(update('submitting'),{state:'submitting'});
+  e.close();e=new DurableTasks(join(root,'state'));bridge=new BrowserBridge(e);
+  assert.equal(bridge.pending()[0]!.delivery_id,job.delivery_id);
+  update('unknown');assert.equal(bridge.candidates().length,0);
+  assert.deepEqual(update('submitted'),{state:'submitted'},'observing existing message may resolve ambiguity without re-sending');
+  e.claimHandoff(task.task_id,h.handoff_id,h.claim_token,'receiver',task.fingerprint);
+  assert.deepEqual(update('submitted'),{state:'claimed'});
+  assert.deepEqual(update('unknown'),{state:'claimed'});
+  assert.equal((bridge.status(task.task_id,h.handoff_id,job.delivery_id) as {state:string}).state,'claimed');
+  assert.equal(bridge.pending().length,0);
+  assert.throws(()=>bridge.status(task.task_id,h.handoff_id,'wrong'),/Invalid/);
+});

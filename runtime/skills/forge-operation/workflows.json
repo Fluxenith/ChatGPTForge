@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "execution": "host-guided; no model execution or autonomous loop",
+  "workflows": [
+    {"id": "new-machine", "references": ["references/deployment.md", "references/recovery.md"], "stages": ["release integrity and prerequisites", "fresh installation and config", "local authenticated MCP", "selected component probes", "actual Host acceptance and coverage report"]},
+    {"id": "mixed-components", "references": ["references/deployment.md", "references/routing.md"], "stages": ["required versus optional profile", "component ownership and pinned versions", "approval and safe onboarding", "cross-provider operation", "receipts and remaining limits"]},
+    {"id": "feature-delivery", "references": ["references/routing.md", "references/workflow.md"], "stages": ["scope and current state", "one mutation owner", "implement", "focused current-fingerprint acceptance", "deployment and closure"]},
+    {"id": "recovery", "references": ["references/recovery.md", "references/lessons.md"], "stages": ["classify boundary", "inspect receipt and actual effect", "smallest authorized correction", "affected revalidation", "record demonstrated lesson"]},
+    {"id": "handoff", "references": ["references/workflow.md", "references/templates.md"], "stages": ["freeze authoritative state", "prepare receipt and constraints", "authorized delivery", "verify claim before new writes"]}
+  ]
+}

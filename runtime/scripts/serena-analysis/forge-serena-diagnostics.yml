@@ -1,0 +1,5 @@
+description: Enable Serena's optional read-only symbol diagnostics for Forge project sessions.
+prompt: null
+excluded_tools: []
+included_optional_tools:
+  - get_diagnostics_for_symbol
