@@ -56,7 +56,6 @@ node dist/forge-cli.js deployment repair --manifest examples/deployment-profile.
 
 - [Deployment](runtime/docs/deployment.md)
 - [Shared memory](runtime/docs/global-memory.md)
-- [PHP](runtime/docs/php-semantic-editing.md)
 - [Windows desktop](runtime/docs/desktop-surface.md)
 - [Operating guide](runtime/skills/forge-operation/SKILL.md)
 - [Contributing](CONTRIBUTING.md) / [Security](SECURITY.md)
