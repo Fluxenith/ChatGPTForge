@@ -1,0 +1,13 @@
+{
+  "extension": "redhat.java@1.54.0",
+  "directory": "vscode-java-1.54.0-win32-x64",
+  "source": "Locally installed Red Hat vscode-java 1.54.0 win32-x64 extension (Serena 1.7.0 pins vscode-java 1.54.0); pinned at install time, not compared with the publisher VSIX hash",
+  "jdtls": "server",
+  "lombok": "lombok/lombok-1.18.39-4050.jar",
+  "java_home": "jre/21.0.10-win32-x86_64",
+  "tree": {
+    "sha256": "019a184bbfdeaecd181a8bf38bd813035e36b26597878d17c68ab6b997bdc035",
+    "files": 548,
+    "bytes": 172705528
+  }
+}

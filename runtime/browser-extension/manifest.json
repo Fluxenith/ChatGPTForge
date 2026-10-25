@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPTForge Continuation",
+  "version": "0.4.7",
+  "default_locale": "en",
+  "description": "__MSG_extensionDescription__",
+  "permissions": ["storage", "alarms", "scripting"],
+  "host_permissions": ["https://chatgpt.com/*", "http://127.0.0.1/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "options_page": "options.html",
+  "action": {"default_title": "__MSG_extensionSettings__"}
+}

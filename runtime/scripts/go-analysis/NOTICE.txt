@@ -1,0 +1,5 @@
+Forge uses gopls v0.23.0 built with Go 1.26.2 for standard LSP navigation.
+Source: https://go.googlesource.com/tools/+/refs/tags/gopls/v0.23.0/gopls/
+The locally installed binary is pinned by SHA-256; module build information is preserved.
+This is a binary/source provenance record, not a reproducible-build attestation.
+All linked module licenses are preserved under licenses/.

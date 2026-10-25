@@ -1,0 +1,8 @@
+{
+  "extensionSettings": {
+    "message": "ChatGPTForge 引き継ぎ設定"
+  },
+  "extensionDescription": {
+    "message": "ログイン済みの Chrome を使い、ローカルに記録した ChatGPTForge の引き継ぎを続行します。モデル API は呼び出しません。"
+  }
+}

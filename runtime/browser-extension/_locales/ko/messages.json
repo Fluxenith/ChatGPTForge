@@ -1,0 +1,8 @@
+{
+  "extensionSettings": {
+    "message": "ChatGPTForge 이어가기 설정"
+  },
+  "extensionDescription": {
+    "message": "로그인된 Chrome으로 로컬에 기록된 ChatGPTForge 인계를 이어갑니다. 모델 API를 호출하지 않습니다."
+  }
+}

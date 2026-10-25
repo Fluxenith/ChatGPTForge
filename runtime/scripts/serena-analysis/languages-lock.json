@@ -1,0 +1,131 @@
+{
+  "serena_version": "1.7.0",
+  "languages": {
+    "lua": {
+      "state": "installed",
+      "resource_dirs": {
+        "LuaLanguageServer": {
+          "sha256": "05b809fb685f6e20ea8bcbd325dca820056e7b239d62124db4dcf3618753f54c",
+          "files": 1230,
+          "bytes": 20097535
+        }
+      },
+      "fixture_symbols": 3,
+      "seconds": 27.2,
+      "note": "Re-pinned after removing lua/log written by the install run; runs keep logs/meta in the owned run directory."
+    },
+    "cpp": {
+      "state": "installed",
+      "resource_dirs": {
+        "ClangdLanguageServer": {
+          "sha256": "ba0b09866e58c7b5073c6bfccb7a5be88fa6f316556fa0322bc80012e7e69296",
+          "files": 241,
+          "bytes": 136420995
+        }
+      },
+      "fixture_symbols": 2,
+      "seconds": 10.1,
+      "capabilities": [
+        "edit",
+        "rename"
+      ],
+      "rename_probe": {
+        "files": 2,
+        "references": 1,
+        "fingerprint": "790dd53e47d5d9d0346bb9c2eab06bc2a3f28c6fe3bab620bdaebde681a07f3d"
+      }
+    },
+    "php": {
+      "state": "installed",
+      "resource_dirs": {
+        "Intelephense": {
+          "sha256": "658fbb3773b1a64de5928d6d0df8f4413f0156d5a774327a4c08dfb457e15050",
+          "files": 11032,
+          "bytes": 126063949
+        }
+      },
+      "fixture_symbols": 3,
+      "seconds": 56.6,
+      "version": "1.18.5"
+    },
+    "bash": {
+      "state": "installed",
+      "resource_dirs": {
+        "BashLanguageServer": {
+          "sha256": "2e44686ab93813f6e06f3e71d8196562088349f468a3e8fe8b7e32444b499955",
+          "files": 2410,
+          "bytes": 28279356
+        }
+      },
+      "fixture_symbols": 1,
+      "seconds": 21.6,
+      "version": "5.8.1"
+    },
+    "kotlin": {
+      "state": "installed",
+      "resource_dirs": {
+        "KotlinLanguageServer": {
+          "sha256": "53e5ddfc4eb6db0c43009fe2e7e2cfdd208ea3554ae741baaf58db0ae45c9ba6",
+          "files": 1063,
+          "bytes": 1180014936
+        }
+      },
+      "capabilities": [
+        "edit",
+        "rename"
+      ],
+      "fixture_symbols": 1,
+      "version": "263.7084.0",
+      "rename_probe": {
+        "files": 2,
+        "references": 1,
+        "fingerprint": "496b865539086a9ba70a68f12357f7368f26c0ef624c50da7a5336c6257d38a7"
+      }
+    },
+    "vue": {
+      "state": "installed",
+      "resource_dirs": {
+        "VueLanguageServer": {
+          "sha256": "807d27aea0d28782c3994f752a4a7df3cf5aacbe475b86c2e1dbe095c8f000f3",
+          "files": 2383,
+          "bytes": 49553232
+        },
+        "VueTypeScriptServer": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "files": 0,
+          "bytes": 0
+        }
+      },
+      "capabilities": [
+        "edit",
+        "rename"
+      ],
+      "fixture_symbols": 4,
+      "rename_probe": {
+        "files": 2,
+        "references": 3,
+        "fingerprint": "74ee9d136131403598c617911f89b4d6293632c55e523ef30f41d5883d16bfb0"
+      }
+    },
+    "php_phpantom": {
+      "state": "installed",
+      "resource_dirs": {
+        "PHPantomServer": {
+          "sha256": "48bd942d8c55a38bd6a40ad13ff8813ea5ee056f3f4bcf9c30e8c99ad88cceac",
+          "files": 1,
+          "bytes": 26141184
+        }
+      },
+      "capabilities": [
+        "edit",
+        "rename"
+      ],
+      "fixture_symbols": 2,
+      "rename_probe": {
+        "files": 2,
+        "references": 1,
+        "fingerprint": "910ed8caaaa3647be55178778ce9b691349cb0991f4d1aecbbabdf386b31f540"
+      }
+    }
+  }
+}

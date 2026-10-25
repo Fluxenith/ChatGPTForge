@@ -1,0 +1,8 @@
+{
+  "extensionSettings": {
+    "message": "ChatGPTForge 接续设置"
+  },
+  "extensionDescription": {
+    "message": "通过当前已登录的 Chrome 接续本机记录的 ChatGPTForge 工作，不调用模型 API。"
+  }
+}

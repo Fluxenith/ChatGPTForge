@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "components": [{"id": "playwright", "version": "0.0.80"}],
+  "gateways": [
+    {"id": "playwright", "transport": "stdio", "ownership": "forge-managed", "required": true},
+    {"id": "external-reference", "transport": "http", "ownership": "external", "required": false}
+  ]
+}

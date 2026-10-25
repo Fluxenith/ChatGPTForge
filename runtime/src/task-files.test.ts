@@ -1,0 +1,25 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtempSync,mkdirSync,readFileSync,writeFileSync,rmSync,existsSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {DurableTasks,digest} from './durable-tasks.js';
+import {TaskFiles} from './task-files.js';
+test('reversible file changes deduplicate and stop on external conflicts',t=>{
+  const root=mkdtempSync(join(tmpdir(),'forge-files-')),project=join(root,'project');mkdirSync(project);
+  const e=new DurableTasks(join(root,'state')),files=new TaskFiles(e);
+  t.after(()=>{e.close();rmSync(root,{recursive:true,force:true,maxRetries:10});});
+  const task=e.create(project,'files','files',['echo ok'],true),lease=task.lease_token!;
+  assert.equal(files.write(task.task_id,'w1','hello.txt','你好',null,lease).state,'completed');
+  assert.equal(files.write(task.task_id,'w1','hello.txt','你好',null,lease).state,'completed');
+  assert.throws(()=>files.write(task.task_id,'escape','../outside','bad',null,lease),/Invalid/);
+  assert.throws(()=>files.write(task.task_id,'badlease','hello.txt','bad',digest('你好'),'old'),/lease/);
+  writeFileSync(join(project,'hello.txt'),'external');
+  assert.throws(()=>files.rollback(task.task_id,'w1','r1',lease),/conflict/);
+  assert.equal(readFileSync(join(project,'hello.txt'),'utf8'),'external');
+  writeFileSync(join(project,'hello.txt'),'你好');
+  assert.equal(files.rollback(task.task_id,'w1','r1',lease).state,'completed');
+  assert.equal(existsSync(join(project,'hello.txt')),false);
+  assert.equal(files.rollback(task.task_id,'w1','r1',lease).state,'completed');
+  assert.equal(files.list(task.task_id).length,2);
+});

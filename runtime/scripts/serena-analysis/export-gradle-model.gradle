@@ -1,0 +1,60 @@
+import groovy.json.JsonOutput
+import org.gradle.api.artifacts.component.ProjectComponentIdentifier
+import org.gradle.api.artifacts.component.ModuleComponentIdentifier
+
+gradle.projectsEvaluated {
+    rootProject.tasks.register('forgeExportJvmModel') {
+        dependsOn(rootProject.allprojects.collectMany { p ->
+            def sets = p.extensions.findByName('sourceSets')
+            sets == null ? [] : sets.collect { ss -> p.tasks.named(ss.classesTaskName) }
+        })
+        doLast {
+            def modules = []
+            def moduleName = { p, s -> 'gradle' + p.path.replace(':', '_') + '_' + s }
+            rootProject.allprojects.each { p ->
+                if (p.plugins.hasPlugin('org.jetbrains.kotlin.multiplatform') || p.plugins.hasPlugin('com.android.application') || p.plugins.hasPlugin('com.android.library')) throw new GradleException('Only JVM source models are supported')
+                p.tasks.withType(org.gradle.api.tasks.compile.JavaCompile).each { t ->
+                    if (t.options.compilerArgs.any { !(it == '-parameters' || it.startsWith('-Xlint') || it.startsWith('-A')) }) throw new GradleException('Unrepresented Java compiler argument')
+                    if (t.options.annotationProcessorPath?.files?.any { it.name.startsWith('lombok-') }) throw new GradleException('Lombok AST transformations require a dedicated model')
+                }
+                def sets = p.extensions.findByName('sourceSets')
+                if (sets == null) return
+                sets.each { ss ->
+                    if (!(ss.name in ['main', 'test'])) throw new GradleException('Custom source sets require an explicit model')
+                    def jc = p.tasks.findByName(ss.compileJavaTaskName)
+                    def generatedJava = jc?.options?.generatedSourceOutputDirectory?.orNull?.asFile
+                    def candidates = ss.allSource.srcDirs + (generatedJava == null ? [] : [generatedJava])
+                    def roots = candidates.unique().findAll { d -> d.exists() && !p.fileTree(d).matching { include '**/*.kt', '**/*.java' }.isEmpty() }
+                    if (roots.isEmpty()) return
+                    def cp = p.configurations.getByName(ss.compileClasspathConfigurationName)
+                    def deps = cp.incoming.resolutionResult.allComponents.collect { c ->
+                        if (!(c.id instanceof ProjectComponentIdentifier)) return null
+                        if (!c.id.build.currentBuild) throw new GradleException('Included build source dependencies require explicit model')
+                        if (c.id.projectPath == p.path) return null
+                        def target = rootProject.findProject(c.id.projectPath)
+                        if (target == null) throw new GradleException('Included build source dependencies require explicit model')
+                        return moduleName(target, 'main')
+                    }.findAll { it != null }
+                    if (ss.name == 'test' && !sets.main.allSource.isEmpty()) deps.add(moduleName(p, 'main'))
+                    def projectArtifacts = cp.resolvedConfiguration.resolvedArtifacts.findAll { a -> a.id.componentIdentifier instanceof ProjectComponentIdentifier }.collect { it.file.canonicalPath }
+                    def projectOutputs = rootProject.allprojects.collectMany { pr -> pr.extensions.findByName('sourceSets')?.collectMany { it.output.classesDirs.files } ?: [] }.collect { it.canonicalPath }
+                    def jars = cp.files.findAll { f -> !projectArtifacts.contains(f.canonicalPath) && !projectOutputs.contains(f.canonicalPath) }.collect { it.canonicalPath }
+                    def kt = p.tasks.findByName(ss.getCompileTaskName('kotlin'))
+                    def compiler = null
+                    if (kt != null && kt.hasProperty('compilerOptions')) {
+                        def opts = kt.compilerOptions
+                        def pluginIds = p.plugins.collect { plugin -> plugin.metaClass.respondsTo(plugin, 'getCompilerPluginId') ? plugin.getCompilerPluginId() : null }.findAll { it != null }.unique()
+                        compiler = [pluginIds:pluginIds, freeArgs:opts.freeCompilerArgs.getOrElse([]), pluginOptions:kt.hasProperty('pluginOptions') ? kt.pluginOptions.getOrElse([]).collectMany { it.arguments } : [], pluginClasspaths:kt.hasProperty('pluginClasspath') ? kt.pluginClasspath.files.collect { it.canonicalPath } : []]
+                        if (opts.jvmTarget.present) compiler.jvmTarget = opts.jvmTarget.get().target
+                        if (opts.languageVersion.present) compiler.languageVersion = opts.languageVersion.get().version
+                        if (opts.apiVersion.present) compiler.apiVersion = opts.apiVersion.get().version
+                    }
+                    def buildPath = p.layout.buildDirectory.get().asFile.canonicalPath + File.separator
+                    modules.add([name:moduleName(p, ss.name), roots:roots.collect { it.canonicalPath }, generatedRoots:roots.findAll { it.canonicalPath.startsWith(buildPath) || it == generatedJava }.collect { it.canonicalPath }, dependencies:deps.unique(), libraries:jars.unique(), compiler:compiler])
+                }
+            }
+            if (modules.isEmpty()) throw new GradleException('No JVM source model')
+            new File(System.getenv('FORGE_MODEL_OUTPUT')).text = JsonOutput.toJson([modules:modules])
+        }
+    }
+}

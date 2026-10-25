@@ -1,0 +1,22 @@
+{
+  "identity": {
+    "source_sha256": "1d6d8214a5806628f1f8e08ed4c81836608ea157e3a3e37f3c40959b2d05dcc1",
+    "binary_sha256": "8f14ea060e9e709c19a9ea9654a44523d4082700159d14fd78788bf0c07894c1"
+  },
+  "capture": {
+    "source_sha256": "1bd0bc57a3e0270222348a968924e8d8a9b3cc7f5edbf9ff91cf171794e8c87d",
+    "binary_sha256": "785d87751ca95994f193ed47a94da5f7a38e48187242b495cebcacc60a63af37"
+  },
+  "pointer": {
+    "source_sha256": "4c4fcd2648c0ab0f2dbcd742eaa0bf2b5fbd725e8f0d5e946c78af205eca1117",
+    "binary_sha256": "2a08ea24c131a5eabf6c96d53b6ca3acdf12ebc2e7be689a0aa17c6a1e151637"
+  },
+  "uia": {
+    "source_sha256": "11a5ecb4e479c8ed18a00e5c366fee399659faeaf75c1b59adad53bcbe6e643b",
+    "binary_sha256": "37a201878cdfa475ed9629fe87a6dbb35727f94c2b1e1ade4281e51ae9ab78dc"
+  },
+  "surface": {
+    "source_sha256": "44dfbe236a36b51bc64448c5d7d692069108ecc0d37052a51571fe71ba96c1a6",
+    "binary_sha256": "473a6ae6a860bce7d1a3c69a91eeddc27284304c55dc73d131baf696146d96e8"
+  }
+}

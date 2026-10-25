@@ -1,0 +1,15 @@
+# Deployment and component lifecycle
+
+Use the packaged `docs/deployment.md` runbook. Identify the intended release, machine, project, config directory, ports and service ownership before execution. Keep the host as reasoner; never enable model-provider execution to fill a deployment gap.
+
+For a fresh machine, inspect `setup.mjs --check`, the release manifest hash, Node/npm and required operating-system tools. Apply only to a fresh installation/config directory. Validate the exact installed entrypoint with authenticated MCP and one fixed project acceptance command. A successful isolated directory installation on an existing PC is not clean-OS evidence. Missing VM/device access remains an explicit coverage limit.
+
+For mixed components, use a fixed-version deployment profile. Treat required and optional services separately; optional absence does not fail the core installation. Managed releases may use their owner-controlled install/bind/rollback commands. External listeners remain owned externally. Imported registrations are unapproved until the required read/write tools are classified; tools/list is discovery, not proof of safe calls, login or GUI authorization.
+
+Use `deployment check --manifest PROFILE.json` for selected dependencies; `deployment repair` previews repairs, `--apply --from ABSOLUTE_UV_EXE` records a verified existing uv path in this configuration, and `--apply --online` permits missing Python/browser downloads through the pinned installers. `deployment apply --manifest PROFILE.json --apply [--online] --probe-file PROBES.json` installs/reuses selected managed components and probes configured services independently. Probe files map server IDs to approved read-probe arrays. Required failures block completion; optional failures return degraded with individual receipts. Never interpret catalog success without safe-call evidence as functional acceptance. Do not change external ownership or infer gateway approval from the profile. See the packaged runbook for manually repaired Node/npm/Git prerequisites and rerun behavior.
+
+Exercise one safe call per required transport/provider, preserve distinct provider identities, and verify selected cross-provider output. Do not start every installed GUI service as a health probe. Browser isolated mode, everyday Chrome Extension, and user login state must be recorded separately. Keep GUI mutations serial across all components.
+
+For upgrades: retain the old release and state backup, establish data compatibility, test the new entrypoint on isolated ports/state, and then switch one owned process. Never let two versions write the same state directory. On an ambiguous restart, inspect PID plus creation identity and actual tool behavior, rather than killing anything on the expected port.
+
+Portable material contains no machine endpoints, local personal paths, tokens, browser cookies or private source content. Store those only in the owner's local configuration. Export only reviewed repository-owned recipes and evidence descriptions. Hashes demonstrate integrity, not authenticity of an unknown publisher.
