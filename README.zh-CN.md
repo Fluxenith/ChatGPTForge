@@ -31,6 +31,23 @@ node dist/forge-cli.js serve
 
 请先创建项目文件夹，并使用你控制的 HTTPS 域名。将现有隧道配置为转发到本地 MCP 服务，再在 ChatGPT 连接界面完成 OAuth。仅启动本地服务并不等于已经连接 ChatGPT。 [MCP / OAuth](docs/connection.md)
 
+## 安装 Forge Chrome 扩展
+
+**ChatGPTForge Continuation** 是本仓库附带的扩展，用于在已登录的 ChatGPT 浏览器接续交接任务，以及辅助管理页面填写项目插件表单。普通 MCP 代码、记忆和桌面工具无需安装它；它也不能代替 HTTPS MCP / OAuth 连接配置。
+
+1. 启动 Forge，使用平常已登录 ChatGPT 的 Chrome 配置文件。
+2. 打开 `chrome://extensions`，启用“开发者模式”，点击“加载已解压的扩展程序”。
+3. 选择下载或 clone 后的 `runtime/browser-extension` 文件夹，其中必须有 `manifest.json`；不要选择仓库根目录或 ZIP。列表应显示 **ChatGPTForge Continuation**。
+4. 打开本机管理页面 `http://127.0.0.1:8768`，展开“设置 → Chrome 扩展配对”，点击“复制 Chrome 配对码”。
+5. 打开扩展设置，填写本机管理地址 `http://127.0.0.1:8768`（自定义管理端口时使用对应端口），粘贴配对码。
+6. 启用“自动接续”，点击“保存设置”，再点击“立即检查”。没有待处理任务时，成功状态为“已连接，等待交接”。启用后，排队的交接提示会在新的 ChatGPT 标签页提交。
+
+使用时保持 Forge 和 Chrome 运行。更新扩展文件后，在 Chrome 扩展列表点击“重新加载”。请勿公开配对码；它不是 ChatGPT 密码，也不是 Playwright token。[连接与故障排查（英文）](docs/connection.md)。
+
+### 还需要 Playwright Extension 吗？
+
+只有“操作现有 Chrome 标签页”这条路线需要另外安装微软的 [Playwright Extension](https://chromewebstore.google.com/detail/playwright-extension/mmlmfjhmonkocbjadbfplnigmagldckm)、配置 Forge 的 `playwright-browser` gateway，并在连接页面允许访问。仅安装扩展不会自动配置 gateway。**两个扩展用途不同，并非每个人都需要安装两个。**[配置步骤（英文）](docs/connection.md#optional-existing-chrome-tab-automation)。
+
 ## 从需求到结果
 
 ![从需求到结果](docs/assets/forge-workflow-zh-CN.png)

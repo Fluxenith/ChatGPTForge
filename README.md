@@ -17,7 +17,7 @@ Edit a project, run its checks, automate an approved browser, and inspect the re
 | Fix code across files | Preview semantic references and renames, apply the changes, run checks, and roll back supported edits. |
 | Pick up interrupted work | Persistent task state and operation receipts help you inspect what ran before continuing. |
 | Reuse project knowledge | Explicitly share memories across projects, propagate reference renames, and recover changes. |
-| Work in a browser | Connect browser tools for approved navigation, interaction and inspection. Existing Chrome sessions require the extension flow. |
+| Work in a browser | Connect browser tools for approved navigation, interaction and inspection. Existing Chrome tab automation uses the separate Playwright Extension setup below. |
 | Operate Windows apps | Observe supported windows, locate desktop surfaces, click and drag between approved windows, then inspect the result. |
 | Add optional tools | Check dependencies, repair supported missing prerequisites, and verify mixed stdio/HTTP services independently. |
 
@@ -37,6 +37,23 @@ node dist/forge-cli.js serve
 ~~~
 
 Create the workspace first. Use an HTTPS origin you control and configure your existing tunnel to the local MCP listener. Complete OAuth in the ChatGPT connection UI. Local startup alone does not connect ChatGPT. See [connection setup](docs/connection.md).
+
+## Install the Forge Chrome extension
+
+**ChatGPTForge Continuation** is the extension included in this repository. Install it to continue queued handoffs in your signed-in ChatGPT browser or use the Manager's project-plugin form helper. Ordinary MCP code, memory and desktop tools do not require it. It does not replace the HTTPS MCP / OAuth connection above.
+
+1. Start Forge, then use the Chrome profile where you are signed in to ChatGPT.
+2. Open `chrome://extensions`, enable **Developer mode**, and choose **Load unpacked**.
+3. Select the cloned repository's `runtime/browser-extension` folder—the folder containing `manifest.json`, not the repository root or a ZIP file. Chrome should show **ChatGPTForge Continuation**.
+4. Open the local Manager at `http://127.0.0.1:8768`. Under **Settings → Chrome extension pairing**, click **Copy Chrome pairing code**.
+5. Open the extension's options. Set the local Manager address to `http://127.0.0.1:8768` (or your configured Manager port) and paste the pairing code.
+6. Enable **automatic continuation**, click **Save settings**, then **Check now**. A successful connection with no queued task shows **Connected, waiting for handoff**. Enabling it allows queued handoff prompts to be submitted in a new ChatGPT tab.
+
+Keep Forge running and Chrome open. After updating the extension files, click **Reload** on its Chrome extensions card. Keep the pairing code private; it is not your ChatGPT password or a Playwright token. [Troubleshooting and connection details](docs/connection.md).
+
+### Do I also need Playwright Extension?
+
+Only for the separate **existing Chrome tab automation** route: install Microsoft's [Playwright Extension](https://chromewebstore.google.com/detail/playwright-extension/mmlmfjhmonkocbjadbfplnigmagldckm), configure Forge's `playwright-browser` gateway, and allow the connection when prompted. Installing the extension alone does not configure that gateway. **Forge Continuation and Playwright Extension serve different purposes; you do not need both for every workflow.** [Setup steps](docs/connection.md#optional-existing-chrome-tab-automation).
 
 ## From request to result
 

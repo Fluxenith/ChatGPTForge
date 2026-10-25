@@ -31,6 +31,23 @@ node dist/forge-cli.js serve
 
 先にプロジェクトフォルダーを作成し、管理権限のある HTTPS オリジンを指定してください。既存のトンネルをローカル MCP サービスへ転送するよう設定し、ChatGPT の接続画面で OAuth 認証を完了します。ローカルサービスを起動しただけでは ChatGPT には接続されません。 [MCP / OAuth](docs/connection.md)
 
+## Forge の Chrome 拡張機能をインストール
+
+**ChatGPTForge Continuation** は、このリポジトリに含まれる拡張機能です。ログイン済みの ChatGPT ブラウザーでタスクの引き継ぎを続行し、管理画面からプロジェクト用プラグインのフォーム入力を補助します。通常の MCP コード編集・メモリ・デスクトップ機能には不要です。HTTPS MCP / OAuth の接続設定は別途必要です。
+
+1. Forge を起動し、ChatGPT にログイン済みの Chrome プロファイルを使用します。
+2. `chrome://extensions` を開き、「デベロッパー モード」を有効にして「パッケージ化されていない拡張機能を読み込む」を選びます。
+3. ダウンロードまたは clone した `runtime/browser-extension` フォルダーを選びます。`manifest.json` を含むフォルダーです。リポジトリのルートや ZIP は選ばないでください。**ChatGPTForge Continuation** が表示されます。
+4. 管理画面 `http://127.0.0.1:8768` の設定から Chrome 拡張機能のペアリングを開き、ペアリングコードをコピーします。
+5. 拡張機能の設定を開き、管理サービスのアドレス `http://127.0.0.1:8768`（変更した場合はその管理ポート）とペアリングコードを入力します。
+6. 自動引き継ぎを有効にして設定を保存し、今すぐ確認するボタンを押します。待機中のタスクがなければ、接続済み・引き継ぎ待ちの状態になります。有効化すると、キュー内の引き継ぎプロンプトが新しい ChatGPT タブで送信されます。
+
+利用中は Forge と Chrome を起動したままにしてください。拡張機能のファイル更新後は Chrome の拡張機能一覧で再読み込みします。ペアリングコードは公開しないでください。ChatGPT のパスワードや Playwright のトークンとは異なります。[接続とトラブルシューティング（英語）](docs/connection.md)。
+
+### Playwright Extension も必要ですか？
+
+既存の Chrome タブを操作する場合のみ、Microsoft の [Playwright Extension](https://chromewebstore.google.com/detail/playwright-extension/mmlmfjhmonkocbjadbfplnigmagldckm) を別途インストールし、Forge の `playwright-browser` gateway を設定して接続を許可します。拡張機能のインストールだけでは gateway は設定されません。**2 つの拡張機能は用途が異なり、常に両方が必要なわけではありません。**[設定手順（英語）](docs/connection.md#optional-existing-chrome-tab-automation)。
+
 ## 依頼から結果まで
 
 ![依頼から結果まで](docs/assets/forge-workflow-ja.png)
