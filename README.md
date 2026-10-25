@@ -1,5 +1,7 @@
 # ChatGPTForge
 
+[English](README.md) · [繁體中文](README.zh-TW.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
+
 ![ChatGPTForge: conversation-driven code, browser and Windows tools](docs/assets/forge-overview.png)
 
 **Turn a ChatGPT conversation into work on your Windows machine.**
@@ -41,12 +43,6 @@ Create the workspace first. Use an HTTPS origin you control and configure your e
 ![Inspect the current state, preview edits, act and verify the result](docs/assets/forge-workflow.png)
 
 The diagrams above illustrate the workflow; they are not application screenshots.
-
-### A desktop example
-
-This actual capture shows text received after a drag between two demonstration windows. It demonstrates that workflow, not compatibility with every Windows app or drag format.
-
-![A demonstration Windows app receiving text from a cross-window drag](docs/assets/desktop-drop-example.png)
 
 ## Try a small workflow
 

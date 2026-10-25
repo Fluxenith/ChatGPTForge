@@ -1,5 +1,7 @@
 # ChatGPTForge
 
+[English](README.md) · [繁體中文](README.zh-TW.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
+
 ![ChatGPTForge：以對話驅動程式、瀏覽器與 Windows 工具](docs/assets/forge-overview-zh-TW.png)
 
 **讓 ChatGPT 對話直接連接你的 Windows 開發環境。**
@@ -23,12 +25,6 @@
 ![理解、預覽、執行與驗證的操作流程](docs/assets/forge-workflow-zh-TW.png)
 
 先查看目前狀態，再預覽修改；完成操作後核對結果。需要回復時，從回執確認支援的還原方式。
-
-### 桌面操作範例
-
-以下是真實執行兩個示範視窗之間文字拖放後，目的視窗收到內容的畫面。這個範例不代表所有應用與拖放格式都已驗證。
-
-![示範視窗收到跨視窗拖放的文字](docs/assets/desktop-drop-example.png)
 
 ## 安裝與整合需求
 
