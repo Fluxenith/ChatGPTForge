@@ -31,6 +31,23 @@ node dist/forge-cli.js serve
 
 프로젝트 폴더를 먼저 만들고 직접 관리하는 HTTPS 주소를 지정하세요. 기존 터널이 로컬 MCP 서비스로 연결되도록 설정한 다음 ChatGPT 연결 화면에서 OAuth 인증을 완료하세요. 로컬 서비스 실행만으로 ChatGPT 연결이 완료되지는 않습니다. [MCP / OAuth](docs/connection.md)
 
+## Forge Chrome 확장 프로그램 설치
+
+**ChatGPTForge Continuation**은 이 저장소에 포함된 확장 프로그램입니다. 로그인된 ChatGPT 브라우저에서 작업 인계를 이어가고, 관리 페이지의 프로젝트 플러그인 양식 입력을 돕습니다. 일반 MCP 코드 편집·메모리·데스크톱 기능에는 필요하지 않습니다. HTTPS MCP / OAuth 연결은 별도로 설정해야 합니다.
+
+1. Forge를 실행하고 ChatGPT에 로그인한 Chrome 프로필을 사용하세요.
+2. `chrome://extensions`에서 ‘개발자 모드’를 켜고 ‘압축해제된 확장 프로그램을 로드합니다’를 선택하세요.
+3. 다운로드하거나 clone한 `runtime/browser-extension` 폴더를 선택하세요. `manifest.json`이 있는 폴더이며, 저장소 최상위 폴더나 ZIP 파일이 아닙니다. **ChatGPTForge Continuation**이 표시되어야 합니다.
+4. 로컬 관리 페이지 `http://127.0.0.1:8768`의 설정에서 Chrome 확장 프로그램 페어링을 열고 페어링 코드를 복사하세요.
+5. 확장 프로그램 설정에서 관리 서비스 주소 `http://127.0.0.1:8768`(변경했다면 해당 관리 포트)를 입력하고 페어링 코드를 붙여 넣으세요.
+6. 자동 이어가기를 켜고 설정을 저장한 뒤 즉시 확인 버튼을 누르세요. 대기 작업이 없으면 연결됨·인계 대기 상태가 표시됩니다. 활성화하면 대기 중인 인계 프롬프트가 새 ChatGPT 탭에서 전송됩니다.
+
+사용 중에는 Forge와 Chrome을 실행해 두세요. 확장 프로그램 파일을 업데이트한 후 Chrome 확장 프로그램 목록에서 새로고침하세요. 페어링 코드는 공개하지 마세요. ChatGPT 비밀번호나 Playwright 토큰이 아닙니다. [연결 및 문제 해결(영어)](docs/connection.md).
+
+### Playwright Extension도 필요한가요?
+
+기존 Chrome 탭을 조작할 때만 Microsoft의 [Playwright Extension](https://chromewebstore.google.com/detail/playwright-extension/mmlmfjhmonkocbjadbfplnigmagldckm)을 별도로 설치하고 Forge의 `playwright-browser` gateway를 설정한 뒤 연결을 허용해야 합니다. 확장 프로그램만 설치하면 gateway는 설정되지 않습니다. **두 확장 프로그램은 용도가 다르며 항상 둘 다 필요한 것은 아닙니다.** [설정 단계(영어)](docs/connection.md#optional-existing-chrome-tab-automation).
+
 ## 요청에서 결과까지
 
 ![요청에서 결과까지](docs/assets/forge-workflow-ko.png)

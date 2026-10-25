@@ -20,6 +20,23 @@
 
 需要 Windows、Node 22.19–26.x、npm、Git、PowerShell，以及另外設定的 ChatGPT／HTTPS MCP 連線。目前提供原始碼安裝，屬開發者預覽版。帳號登入、桌面授權與第三方工具核准需各自設定。
 
+## 安裝 Forge Chrome 擴充功能
+
+**ChatGPTForge Continuation** 是本倉庫附帶的擴充功能，用於在已登入的 ChatGPT 瀏覽器接續交接任務，以及協助管理頁填寫專案外掛表單。一般 MCP 程式碼、記憶與桌面工具不需要安裝它；它也不取代 HTTPS MCP／OAuth 連線設定。
+
+1. 啟動 Forge，使用平常已登入 ChatGPT 的 Chrome 設定檔。
+2. 開啟 `chrome://extensions`，打開「開發人員模式」，按「載入未封裝項目」。
+3. 選擇下載或 clone 後的 `runtime/browser-extension` 資料夾，裡面必須有 `manifest.json`；不要選倉庫根目錄或 ZIP。清單應出現 **ChatGPTForge Continuation**。
+4. 開啟本機管理頁 `http://127.0.0.1:8768`，展開「設定 → Chrome 擴充功能配對」，按「複製 Chrome 配對碼」。
+5. 開啟擴充功能設定，填入本機管理服務 `http://127.0.0.1:8768`（若自訂管理埠則改用該埠），貼上配對碼。
+6. 勾選「啟用自動接續」，按「保存設定」，再按「立即檢查」。沒有待處理任務時，成功狀態應為「已連線，等待交接」。啟用後，排隊的交接提示會在新 ChatGPT 分頁送出。
+
+使用時保持 Forge 與 Chrome 開啟。更新擴充功能檔案後，到 Chrome 擴充功能清單按「重新載入」。配對碼請勿公開；它不是 ChatGPT 密碼，也不是 Playwright token。[連線與疑難排解（英文）](docs/connection.md)。
+
+### 還需要 Playwright Extension 嗎？
+
+只有要走「操作既有 Chrome 分頁」這條路線才需要另外安裝微軟的 [Playwright Extension](https://chromewebstore.google.com/detail/playwright-extension/mmlmfjhmonkocbjadbfplnigmagldckm)，設定 Forge 的 `playwright-browser` gateway，並在連線畫面允許存取。只裝擴充功能不會自動完成 gateway 設定。**兩個擴充功能用途不同，不是每個人都要裝兩個。**[設定步驟（英文）](docs/connection.md#optional-existing-chrome-tab-automation)。
+
 ## 從需求到結果
 
 ![理解、預覽、執行與驗證的操作流程](docs/assets/forge-workflow-zh-TW.png)
